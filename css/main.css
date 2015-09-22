@@ -272,7 +272,7 @@ main {
         bottom: 0; right: 0; left: 0;
         width: 100%;
         height: 55px;
-        background: url(../img/domeDotSmall.png) center bottom repeat-x;
+        background: url(../img/domeBorder.png) center bottom repeat-x;
     }
 
 .linkAnchor {
@@ -731,9 +731,9 @@ footer {
 
 main.dabba {
     padding: 10em 0 8em;
-    background: url(../img/dabba.png) 45% 30% repeat,
-                #333 url(../img/bgWoodBrown.jpg) 0 50% repeat
-              ;
+    /*background: url(../img/dabba.png) 45% 30% repeat,*/
+                /*#333 url(../img/bgWoodBrown.jpg) 0 50% repeat*/
+              /*;*/
     background: url(../img/dabbaClassy.jpg) 50% 50% no-repeat fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;

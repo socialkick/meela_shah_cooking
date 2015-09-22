@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <title></title>
-        <meta name="description" content="">
+        <title>Meela Shah Indian Cooking</title>
+        <meta name="description" content="My name is Meela Shah I teach Indian cooking classes in the San Francisco Bay Area. Learn how to use exotic spices and their incredible health benefits. I also hold demonstrations and events at local businesses where you can come enjoy samples of my cooking.">
         <?php include 'headItems.php';?>
     </head>
 
@@ -27,7 +27,7 @@
                     <h2>Let's Cook Together</h2>
                     <p>
                         My name is Meela Shah I teach Indian cooking classes in the San Francisco Bay Area.
-                        Come learn how to use exotic spices and their incredible health benefits.
+                        Learn how to use exotic spices and their incredible health benefits.
                         I also hold demonstrations and events at local businesses
                         where you can come enjoy samples of my cooking.
                     </p>
@@ -46,7 +46,7 @@
             <section class="rightToLeft">
                 <div class="linkAnchor" id="MasalaDabba"></div>
                 <div class="column6 overlap moveLeft photoBorder">
-                    <img id="photoDabba" src="img/dabbaNew.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
+                    <img id="photoDabba" src="img/dabba.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
                 </div>
                 <div class="column6 overlap moveRight textBox" style="margin-top: -2em;">
                     <h2>Masala Dabba<span>(Spice Box)</span></h2>

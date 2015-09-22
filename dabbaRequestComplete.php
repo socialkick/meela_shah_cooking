@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <title></title>
-        <meta name="description" content="">
+        <title>Masala Dabba Request Complete - Meela Shah Indian Cooking</title>
+        <meta name="description" content="Thank you for requesting a Masala Dabba, I will respond to your request as soon as I am able.">
         <?php include 'headItems.php';?>
     </head>
 

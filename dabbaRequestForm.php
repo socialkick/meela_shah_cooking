@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <title></title>
-        <meta name="description" content="">
+        <title>Request a Masala Dabba - Meela Shah Indian Cooking</title>
+        <meta name="description" content="The heart of the Indian kitchen is the Masala Dabba. It contains the spices you'll need to start cooking Indian food at home. My dabbas are made to order to ensure freshness, so availability can be limited. Please contact me for more information.">
         <?php include 'headItems.php';?>
     </head>
 

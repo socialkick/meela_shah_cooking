@@ -3,7 +3,7 @@
     <head>
 
         <title>Recipe: Kulfi Ice Cream - Meela Shah Indian Cooking</title>
-        <meta name="description" content="">
+        <meta name="description" content="4 Servings, 15min Prep, 10min Cook (4hrs inactive). Learn how to cook Kulfi, a very creamy Indian ice cream. It is made with sweet spices such as green cardamom & saffron, and nuts like pistachios & almonds.">
         <?php include 'headItems.php';?>
 
     </head>

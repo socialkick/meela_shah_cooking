@@ -3,7 +3,7 @@
     <head>
 
         <title>Recipe: Mattar Paneer Masala - Meela Shah Indian Cooking</title>
-        <meta name="description" content="">
+        <meta name="description" content="4 Servings, 15min Prep, 45min Cook. Learn how to cook Mattar Paneer Masala, a vegetarian entree from North Indian that uses paneer cheese, peas, and a tomato based sauce. Using earthy spices to gain it's powerful flavor, it goes will with naan, rice, and yogurt.">
         <?php include 'headItems.php';?>
 
     </head>

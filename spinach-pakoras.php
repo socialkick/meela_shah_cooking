@@ -3,7 +3,7 @@
     <head>
 
         <title>Recipe: Spinach Pakoras - Meela Shah Indian Cooking</title>
-        <meta name="description" content="">
+        <meta name="description" content="16-20 Pieces, 15min Prep, 40min Cook. Learn how to cook Spinach Pakoras, a fried appetizer made with chickpea flour and vegetables. They are best served with a fresh chutney or dipping sauce.">
         <?php include 'headItems.php';?>
 
     </head>
@@ -32,7 +32,7 @@
                     </ul>
                     <p>
                         Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables.
-                        These are best served with a fresh chutney or dipping sauce.
+                        They are best served with a fresh chutney or dipping sauce.
                     </p>
                 </div>
             </section>
