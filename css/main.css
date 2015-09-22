@@ -172,12 +172,12 @@ header {
     header.hidden {
         margin-top: -10em;
     }
-    header.alt {
+    header.subpage {
         background: rgba(0,0,0,0);
         border: none;
         float: left;
     }
-        header.alt #headerInner a {
+        header.subpage #headerInner a {
             float: left;
             padding: 1em;
             margin: 1em 0;
@@ -634,6 +634,7 @@ section {
         margin: -3% 0 0 -2%;
     }
         #ingredients h3 {
+            font-size: 1.3em;
             background-color: #77110f;
             color: #fff;
             padding: 1em;
@@ -763,7 +764,7 @@ footer {
         color: #fff !important;
     }
         #footerInner h2 {
-            font-size: 1.6em;
+            font-size: 1.4em;
             margin-bottom: 0.5em;
         }
         #footerInner h2:after {

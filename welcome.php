@@ -14,7 +14,6 @@
 
         <?php include 'header.php';?>
 
-        <img id="heroImage" src="img/bgTopSpices.jpg" alt="Indian Spices used in cooking traditional cuisine."/>
 
         <main>
 
