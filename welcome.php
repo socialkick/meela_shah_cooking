@@ -32,7 +32,7 @@
                         where you can come enjoy samples of my cooking.
                     </p>
                     <a href="https://www.facebook.com/pages/Meela-Shah-Indian-Cooking/459450137418684?sk=events&ref=page_internal" target="blank">
-                        <button>See Calendar<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
+                        <button class="primary">See Calendar<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
                     </a>
                 </div>
                 <div class="column6">
@@ -56,8 +56,8 @@
                         A complete Dabba costs $30 (spices included),
                         and I can also provide you with extra spices refills.
                     </p>
-                    <a href="#" target="blank">
-                        <button>Order a Dabba</button>
+                    <a href="javascript:delay('dabbaRequestForm.php')">
+                        <button class="primary">Request a Dabba</button>
                     </a>
                 </div>
                 <div class="column6 mobileHide0000001v">
@@ -69,7 +69,7 @@
 
             <section>
                 <div class="linkAnchor" id="Recipes"></div>
-                <div class="column6 textBox">
+                <div class="column6 textBox" style="margin-top:-4em;">
                     <h2>My Favorite Recipes</h2>
                     <p>
                         I provide recipes at all of my classes and events,
@@ -83,7 +83,7 @@
                         <div class="cardInfo">
                             <h4>Spinach Pakoras</h4>
                             <p>makes 16-20</p>
-                            <a href="javascript:delay('spinach-pakoras.php')"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('spinach-pakoras.php')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
@@ -91,7 +91,7 @@
                         <div class="cardInfo">
                             <h4>Mattar Paneer Masala</h4>
                             <p>serves 3-4</p>
-                            <a href="javascript:delay('mattar-paneer-masala.php')"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('mattar-paneer-masala.php')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
@@ -99,7 +99,7 @@
                         <div class="cardInfo">
                             <h4>Kulfi Ice Cream</h4>
                             <p>serves 3-4</p>
-                            <a href="javascript:delay('kulfi-ice-cream.php')"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('kulfi-ice-cream.php')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                 </ul>

@@ -1,40 +1,30 @@
-/*#loading {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*position: fixed;*/
-    /*display: block;*/
-    /*z-index: 998;*/
-    /*text-align: center;*/
-    /*opacity: 1;*/
-
-    /*background: #fff url(../img/flowerLoading.gif) no-repeat center center fixed;*/
-    /*background-size: 4.3em 3em;*/
-/*}*/
-/*#loading > img {*/
-    /*position: absolute;*/
-    /*width: 2em;*/
-    /*height: 2em;*/
-    /*left: 50%;*/
-    /*top: 50%;*/
-    /*margin-left: -1em;*/
-    /*margin-top: -1em;*/
-/*}*/
-/*#loading.hidden {*/
-    /*opacity: 0;*/
-    /*z-index: -999;*/
-    /*-webkit-transition: 0.2s opacity 0s, 0s z-index 0.2s; -moz-transition: 0.2s opacity 0s, 0s z-index 0.2s; -ms-transition: 0.2s opacity 0s, 0s z-index 0.2s; -o-transition: 0.2s opacity 0s, 0s z-index 0.2s; transition: 0.2s opacity 0s, 0s z-index 0.2s;*/
-/*}*/
-
-/*#loading.show {*/
-    /*opacity: 1;*/
-    /*z-index: 998;*/
-    /*-webkit-transition: 0s z-index 0s, 0.2s opacity 0s; -moz-transition: 0s z-index 0s, 0.2s opacity 0s; -ms-transition: 0s z-index 0s, 0.2s opacity 0s; -o-transition: 0s z-index 0s, 0.2s opacity 0s; transition: 0s z-index 0s, 0.2s opacity 0s;*/
-/*}*/
-
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    z-index: 998;
+    opacity: 1;
+    background: #fff url(../img/flowerLoading.gif) no-repeat center center fixed;
+    background-size: 4.3em 3em;
+    -webkit-transition: top 0.3s;
+       -moz-transition: top 0.3s;
+            transition: top 0.3s;
+    }
+.no-js #loading {
+    display: none !important;
+}
+#loading.hidden {
+    top: -100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-out, top 0s ease-out 0.2s;
+       -moz-transition: opacity 0.2s ease-out, top 0s ease-out 0.2s;
+            transition: opacity 0.2s ease-out, top 0s ease-out 0.2s;
+    }
 
 
 html {
@@ -140,6 +130,12 @@ img {
 ul {
     margin: 0;
     padding: 0;
+}
+hr {
+    height: 1px;
+    border: none;
+    background: #faa602;
+    margin-top: 20px;
 }
 
 header {
@@ -259,6 +255,7 @@ img#heroImage {
 main {
     margin-top: -1px; /* Some devices/browsers leave a 1px gap here */
     position: relative;
+    min-height: 50%;
     background: #eee;
     padding: 2em 0 4em; /* Padding-Bottom for Dome Background */
     background: url(../img/bgWoodBrown.jpg) repeat-y 50% 0;
@@ -353,7 +350,7 @@ section {
     }
     #photoCinnamon {
         width: 60%;
-        margin: 5% auto -2%;
+        margin: 0 auto 4%;
     }
     @media (max-width: 1200px) {
         #photoMortar {
@@ -363,6 +360,7 @@ section {
             margin: 0 auto 18%;
         }
         #photoCinnamon {
+            margin: 5% auto;
         }
     }
 
@@ -580,39 +578,54 @@ main.recipePage {
         display: inline-block;
         margin: 1em auto;
         padding: 0.5em 1.3em;
-        border: 1px solid #186b8e;
         font-style: italic;
         text-transform: uppercase;
         letter-spacing: 1px;
-        background: #fff;
+        border: none;
+        background: transparent;
 
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
     }
-        button.small {
-            font-size: 0.8em;
-            margin: 1em auto .5em;
-            padding: 0.3em 1em;
+        button img {
+            display: inline;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            background: #000;
+            border-radius: 2px;
+            margin: -0.2em 0 0 .4em;
         }
-        button:hover, button:focus {
-            color: #fff;
-            border-color: #fff;
-            background: #114b64;
+        button.primary{
+            color: #333;
+            border: 1px solid #186b8e;
+            background: #fff;
         }
-        button:active {
-            background: #0c3647;
-        }
-            button img {
-                display: inline;
-                vertical-align: middle;
-                width: 1em;
-                height: 1em;
-                background: #000;
-                border-radius: 2px;
-                margin: -0.2em 0 0 .4em;
+            button.primary.small {
+                font-size: 0.8em;
+                margin: 1em auto .5em;
+                padding: 0.3em 1em;
+            }
+            button.primary:hover, button.primary:focus {
+                color: #fff;
+                border-color: #fff;
+                background: #114b64;
+            }
+            button.primary:active {
+                background: #0c3647;
             }
 
+        button.secondary {
+            color: #fff;
+            background: #114b64;
+        }
+            button.secondary:hover {
+                background: #0c3647;
+            }
+            button.secondary:active {
+                background: #114b64;
+            }
 
 
 footer {
@@ -645,16 +658,6 @@ footer {
         #footerInner .column4 {
             vertical-align: top;
         }
-    footer button {
-        color: #fff;
-        background: #114b64;
-    }
-    footer button:hover {
-        background: #0c3647;
-    }
-    footer button:active {
-        background: #114b64;
-}
 
     #share {
         margin: 1.5em auto 1em;
@@ -720,9 +723,74 @@ footer {
 
 
 
+/* ------------------------------------------------------------
+
+    DABBA ORDER PAGE
+
+------------------------------------------------------------  */
+
+main.dabba {
+    padding: 10em 0 8em;
+    background: url(../img/dabba.png) 45% 30% repeat,
+                #333 url(../img/bgWoodBrown.jpg) 0 50% repeat
+              ;
+    background: url(../img/dabbaClassy.jpg) 50% 50% no-repeat fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -ms-background-size: cover;
+            background-size: cover;
+}
+
+    main.dabba form {
+        background: rgba(255,255,255,1);
+        /*text-align: left;*/
+    }
+        main.dabba form > * {
+            display: block;
+            width: 75%;
+            margin: 0 auto 0.5em;
+        }
+            main.dabba form label  {
+                padding: 1em 0 0;
+                /*font: 1.1em 'Cinzel', 'Times New Roman', serif;*/
+            }
+            main.dabba form textarea {
+                resize: vertical;
+            }
+            main.dabba form #submit {
+                margin: 3em auto 2em;
+                width: auto;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Breakpoints
    ========================================================================== */
+
+
+/* Header Absolute:Top when screen is short */
+    @media (max-height: 30em) {
+        header {
+            position: absolute !important;
+        }
+    }
 
 
 
@@ -1062,6 +1130,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 .rightToLeft {
     direction: rtl;
 }
+    .rightToLeft * {
+        direction: ltr;
+    }
 
 .overlap {
     display: inline-block;

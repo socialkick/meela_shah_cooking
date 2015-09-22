@@ -9,14 +9,11 @@
 
     $(window).load(function() {
         setTimeout(function(){
-            $('#loading').fadeOut(500);
-        }, 0);
+            $('#loading').addClass('hidden');
+        }, 200);
     });
     // To add a delay, change ending 0
 }
-
-
-
 
 // ---------- DELAY A LINK ----------
 // HTML NOTE, within the html, use: href="javascript:delay('URL')"
@@ -26,7 +23,7 @@
             window.location = URL
         }, 200);
 
-        $('#loading').removeClass('hidden').addClass('show');
+        $('#loading').removeClass('hidden');
 
         // ----- Disable Links After one is Clicked (prevent click confusion)
         var all_links = document.getElementsByTagName("a");
@@ -85,46 +82,6 @@
 
 
 
-//    // ---------- IOS SCROLL EFFECTS (use this snippet to allow apple scroll events) ----------
-//    // ---- 1. Copied scripts from above, attempting to make them work concurrently with IOS
-//
-//    $(window).on('touchend', function() {
-//
-//
-//
-//        var current_scroll = $(window).scrollTop();
-////  HEADER SHRINKS
-//        if (current_scroll <= 0) {
-//            $('header').removeClass('scrolling'),
-//                $('#menuToggle').removeClass('small');
-//        }
-//        else {
-//            $('header').addClass('scrolling'),
-//                $('#menuToggle').addClass('small');
-//        }
-////  HEADER HIDES
-//        if (current_scroll >= 300) {
-//            if (current_scroll <= scroll_pos) {
-//                $('header').removeClass('hidden');
-//            }
-//            else {
-//                $('header').addClass('hidden');
-//            }
-//        }
-//        else {
-//            $('header').removeClass('hidden');
-//        }
-////    MOBILE MENU HIDES ON SCROLL
-//        if (current_scroll !== scroll_pos) {
-//            $('nav').removeClass('mobile');
-//        }
-//
-//
-//
-//    });
-
-
-
 
 
 }
@@ -138,6 +95,7 @@
     });
     $("nav ul li a").click(function(){
         $("nav").removeClass('active');
+        $("#fullClose").removeClass('active');
     });
     $("#fullClose").click(function() {
         $("nav").removeClass('active'),

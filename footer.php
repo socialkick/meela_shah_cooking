@@ -4,12 +4,12 @@
         <div class="column4">
             <h2>Email Me:</h2>
             <a href="mailto:hello@meelashah.com">
-                <button>Hello@MeelaShah.com</button>
+                <button class="secondary">Hello@MeelaShah.com</button>
             </a>
         </div><div class="column4">
             <h2>Follow Me:</h2>
             <a href="mailto:hello@meelashah.com">
-                <button>Facebook<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
+                <button class="secondary">Facebook<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
             </a>
         </div><div class="column4">
             <h2>Share:</h2>

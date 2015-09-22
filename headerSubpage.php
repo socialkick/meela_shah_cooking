@@ -2,8 +2,7 @@
 
 <header>
     <div id="headerInner">
-        <a href="#top" id="logo" class="borderBox">
-            <!-- <img src="img/logo.png" alt="Meela Shah Indian Cooking"> -->
+        <a href="javascript:delay('http://www.socialkick.it/meelaShah')" id="logo" class="borderBox">
             <h1>
                 Meela Shah<span>Indian Cooking</span>
             </h1>
@@ -12,11 +11,11 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#ClassesAndEvents">Classes & Events</a>
+                    <a href="javascript:delay('http://www.socialkick.it/meelaShah#ClassesAndEvents')">Classes & Events</a>
                 </li><li>
-                    <a href="#MasalaDabba">Spice Boxes</a>
+                    <a href="javascript:delay('http://www.socialkick.it/meelaShah#MasalaDabba')">Spice Boxes</a>
                 </li><li>
-                    <a href="#Recipes">Recipes</a>
+                    <a href="javascript:delay('http://www.socialkick.it/meelaShah#Recipes')">Recipes</a>
                 </li><li>
                     <a href="#Contact">Contact</a>
                 </li>
