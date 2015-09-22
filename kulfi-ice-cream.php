@@ -21,7 +21,10 @@
         <main>
 
             <section>
-                <div class="textBox recipeMain floatLeft">
+                <div class="column6 photoBorder floatRight">
+                    <img src="img/recipes/kulfiMain.jpg" alt="Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables." />
+                </div>
+                <div class="column6 textBox recipeSummary floatLeft">
                     <h2>Kulfi Ice Cream</h2>
                     <ul>
                         <li>4 Servings</li>
@@ -33,9 +36,6 @@
                         Kulfi is a very creamy Indian ice cream.
                         It is made with sweet spices such as green cardamom & saffron, and nuts like pistachios & almonds.
                     </p>
-                </div>
-                <div class="photoBorder recipeMain floatRight">
-                    <img src="img/recipes/kulfiMain.jpg" alt="Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables." />
                 </div>
             </section>
 
@@ -70,26 +70,22 @@
                         <h3>Directions</h3>
                         <ul>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/kulfi1.jpg" alt="Mixing bowl with kulfi ingredients." />
                                 <h6>1 - Start the Mixture.</h6>
                                 In a bowl, mix all ingredients EXCEPT the whipping cream (and garnish).
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/kulfi2.jpg" alt="Whipped cream being added to the mixture." />
                                 <h6>2 - Whip the Cream.</h6>
                                 Whip the cream until slightly stiff, then gently stir into the mixture.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/kulfi3.jpg" alt="Kulfi mixture being added to molds." />
                                 <h6>3 - Pour into Molds.</h6>
                                 Put mixture into 4 evenly sized plastic or metal molds and then cover.
                                 Freeze the mixture, ideally for 4 hours.
                             </li>
                             <li>
-                                <span></span>
                                 <h6>4 - Serve the Kulfis.</h6>
                                 Remove kulfis a few minutes before serving (they should not be served when hard).
                                 To remove kulfis from a mold, you can briefly dip the mold in warm water first.

@@ -21,7 +21,10 @@
         <main>
 
             <section>
-                <div class="recipeMain textBox floatLeft">
+                <div class="column6 photoBorder floatRight">
+                    <img src="img/recipes/pakorasMain.jpg" alt="Golden brown Spinach Pakoras." />
+                </div>
+                <div class="column6 recipeSummary textBox floatLeft">
                     <h2>Spinach Pakoras</h2>
                     <ul>
                         <li>16-20 Pieces</li>
@@ -33,13 +36,10 @@
                         These are best served with a fresh chutney or dipping sauce.
                     </p>
                 </div>
-                <div class="recipeMain photoBorder floatRight">
-                    <img src="img/recipes/pakorasMain.jpg" alt="Golden brown Spinach Pakoras." />
-                </div>
             </section>
 
             <section>
-                <div id="recipeContainer">
+                <div class="column12" id="recipeContainer">
                     <div id="ingredients">
                         <h3>Ingredients</h3>
                         <h5>Pakora Mixture</h5>
@@ -73,13 +73,11 @@
                         <h3>Directions</h3>
                         <ul>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/pakoras1.jpg" alt="Bowl with pakora ingredients ready to be mixed." />
                                 <h6>1 - Ready the Ingredients.</h6>
                                 Make sure the spinach is finely chopped; onions very finely diced & garlic, chili, are very finely minced.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/pakoras2.jpg" alt="Bowl with pakora ingredients ready to be mixed." />
                                 <h6>2 - Heat the Oil, Make the Mix.</h6>
                                 Begin heating 1/2 inch of oil in a pan, on medium heat.
@@ -88,7 +86,6 @@
                                 If the mix sits for too long and goes runny, just add a little more chickpea flour.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/pakoras3.jpg" alt="Example of making the balls with your hands." />
                                 <h6>3 - Start the Frying.</h6>
                                 Once the oil has full heated, it's time to make the balls.
@@ -96,7 +93,6 @@
                                 Keep turning them around in the fryer to ensure all sides are cooked, until they are golden brown.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/pakoras4.jpg" alt="Golden brown pakoras in the fryer." />
                                 <h6>4 - Drain the Pakoras.</h6>
                                 Once they are golden brown,

@@ -21,7 +21,10 @@
         <main>
 
             <section>
-                <div class="textBox recipeMain floatLeft">
+                <div class="column6 photoBorder floatRight">
+                    <img src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
+                </div>
+                <div class="column6 recipeSummary textBox floatLeft">
                     <h2>Mattar Paneer Masala</h2>
                     <ul>
                         <li>4 Servings</li>
@@ -32,9 +35,6 @@
                         This is a vegetarian entree from North Indian that uses paneer cheese, peas, and a tomato based sauce.
                         Using earthy spices to gain it's powerful flavor, it goes will with naan, rice, and yogurt.
                     </p>
-                </div>
-                <div class="photoBorder recipeMain floatRight">
-                    <img src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
                 </div>
             </section>
 
@@ -84,14 +84,12 @@
                         <h3>Directions</h3>
                         <ul>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/mattarPaneer1.jpg" alt="Saucepan with oil and large spices." />
                                 <h6>1 - Flavor the Oil.</h6>
                                 In a non-stick saucepan, heat oil on medium. When hot, flavor the oil by adding the dry chili peppers, cinnamon sticks,
                                 cloves and mustard seeds. Sauté for 30 seconds, or until the mustard seeds start popping.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/mattarPaneer2.jpg" alt="Sauteing onions and large spices." />
                                 <h6>2 - Brown the Onions.</h6>
                                 Add the onions and sauté, stirring occasionally, until golden brown (approx. 15 min).
@@ -99,35 +97,29 @@
                                 the thicker and more flavorful the gravy.
                             </li>
                             <li>
-                                <span></span>
                                 <h6>3 - Add the Spice Mix.</h6>
                                 Add the garlic and the prepared Spice Mix (fenugreek, curry powder, turmeric, red chili powder and salt). Sauté for 1 minute.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/mattarPaneer3.jpg" alt="Tomatoes and tomato paste form the base for the sauce." />
                                 <h6>4 - Make the Sauce.</h6>
                                 Add the garlic and the prepared Spice Mix (fenugreek, curry powder, turmeric, red chili powder and salt). Sauté for 1 minute. Add the tomatoes, tomato paste and hot water. Cover with a lid and simmer (approx. 5-8 min), stirring occasionally.
                             </li>
                             <li>
-                                <span></span>
                                 <h6>5 - Add Peas & Taste.</h6>
                                 Stir in the peas. Taste the curry and add salt/sugar/chili powder to taste. Cover with a lid,
                                 reduce heat and gently simmer (approx. 5 min) until peas are almost cooked.
                             </li>
                             <li>
-                                <span></span>
                                 <img src="img/recipes/mattarPaneer4.jpg" alt="Example of making the balls with your hands." />
                                 <h6>6 - Add the Paneer.</h6>
                                 Gently stir in the paneer and cook until the paneer is heated through (approx. 5 min).
                             </li>
                             <li>
-                                <span></span>
                                 <h6>7 - Remove Large Spices.</h6>
                                 Remove from heat. Remove the large spices from the curry (chili peppers, cinnamon sticks, and cloves).
                             </li>
                             <li>
-                                <span></span>
                                 <h6>8 - Garnish & Serve.</h6>
                                 Garnish with chopped cilantro and a sprinkle of lime juice. Serve hot with flat bread or over rice.
                             </li>

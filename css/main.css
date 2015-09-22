@@ -9,14 +9,6 @@ html {
     background-size: 4.3em 3em;
 }
 
-/*html * {*/
-    /*-webkit-transition: .25s all;*/
-       /*-moz-transition: .25s all;*/
-        /*-ms-transition: .25s all;*/
-         /*-o-transition: .25s all;*/
-            /*transition: .25s all;*/
-/*}*/
-
 body {
     width: 100%;
     height: 100%;
@@ -28,15 +20,6 @@ body {
 img {
     width: 100%;
     height: auto;
-}
-#bgCover{
-    position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -136,7 +119,7 @@ header {
         display: inline-block;
         max-width: 1400px;
         width: 90%;
-        padding: 0.5em 0;
+        padding: 0.2em 0;
         text-align: left;
     }
         #logo {
@@ -148,7 +131,7 @@ header {
             position: absolute;
             top: 0;
             right: 0;
-            margin: 2.4em 0 0;
+            margin: 2.2em 0 0;
             }
             nav li {
                 list-style-type: none;
@@ -169,14 +152,13 @@ img#heroImage {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: -6%;
 }
 
 main {
     position: relative;
     background: #eee;
     padding: 2em 0;
-    /*margin-top: -8px; *//* Closes the gap between top IMG and MAIN section */
-    /*overflow-x: hidden;*/
     background: url(../img/bgWoodBrown.jpg) repeat-y 50% 0;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
@@ -192,12 +174,6 @@ main {
     margin-top: -10em;
 }
 
-    /*#hero {*/
-        /*width: 100%;*/
-        /*height: 16em;*/
-        /*background: url(../img/spikeUp.png) repeat-x bottom center;*/
-    /*}*/
-
 section {
     display: block;
     clear: both;
@@ -206,199 +182,332 @@ section {
     max-width: 1400px;
     width: 80%;
 }
-    section > * {
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-    }
         section:after {
-            visibility: hidden;
-            display: block;
-            font-size: 0;
             content: " ";
             clear: both;
+            visibility: hidden;
+            display: block;
             height: 0;
+            width: 0;
         }
-    .textBox {
+
+
+
+/* ------------------------------------------------------------
+
+    NEW COLUMN SYSTEM
+
+------------------------------------------------------------  */
+
+.column3, .column4, .column6, .column12 {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    /* all columns are fractions of a 96% width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .column12 {
+        width: 96%
+    }
+    .column6 {
+        width: 48%;
+    }
+    .column4 {
+        width: 32%;
+    }
+    .column3 {
+        width: 24%;
+    }
+
+    .mobileHide {
         position: relative;
-        margin-top: 4em;
-        padding: 3em 3.3em;
-        background: #fff;
-        width: 45%;
-        z-index: 5;
-        box-shadow: 0 .4em .5em rgba(0,0,0,0.15);
+        overflow: auto;
+    }
+        @media (max-width: 767px) {
+            .mobileHide {
+                position: absolute;
+                overflow: hidden;
+                height: 1px; width: 1px;
+                margin: -1px; padding: 0; border: 0;
+            }
+        }
+    .mobileOnly {
+        position: absolute;
+        overflow: hidden;
+        height: 1px; width: 1px;
+        margin: -1px; padding: 0; border: 0;
+
+    }
+        @media (max-width: 767px) {
+            .mobileOnly {
+                position: relative;
+                overflow: auto;
+            }
+        }
+
+    @media (max-width:767px) {
+        .column3, .colunm4, .column6, .column12 {
+            display: block;
+            width: 96%;
+            max-width: 550px;
+            left: 0 !important;
+            right: 0 !important;
+            float: none !important;
+            margin: 0 auto !important;
+        }
+    }
+
+
+    .floatLeft {
+        float: left;
+        clear: left;
+        left: 5%;
+    }
+    .floatRight {
+        float: right;
+        clear: right;
+        right: 5%;
+    }
+    @media (max-width:1200px) {
+        .floatLeft.switch {
+            float: right;
+            clear: right;
+            left: -5%;
+        }
+        .floatRight.switch {
+            float: left;
+            clear: left;
+            right: -5%;
+        }
+    }
+
+
+/* ==========================================================================
+    Floating Photos
+    ========================================================================== */
+
+.photoBorder {
+    position: relative;
+}
+    .photoBorder:after {
+        content: ' ';
+        position: absolute;
+        border: 8px solid #fff;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+#photoCooking {
+    width: 110%;
+    height: 110%;
+    margin: -5%;
+}
+
+#photoDabba {
+    position: relative;
+    width: 120%;
+    height: 120%;
+    margin: -15%;
+    border-radius: 50%;
+    box-shadow: 0.8em 1.2em 2em 1em rgba(0,0,0,0.8);
+}
+
+.accentImage {
+    display: block;
+    margin: 14% auto 10%;
+    max-width: 350px;
+    vertical-align: middle;
+}
+    #photoMortar {
+        width: 60%;
+    }
+    #photoChilies {
+    }
+    #photoCinnamon {
+    }
+
+
+
+.textBox {
+    position: relative;
+    padding: 3em 3.3em;
+    background: #fff;
+    z-index: 5;
+    box-shadow: 0 .4em .5em rgba(0,0,0,0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .textBox:after {
+        content: " ";
+        position: absolute;
+        border: 1px solid #ff7900;
+        top: 0.7em;
+        right: 0.7em;
+        bottom: 0.7em;
+        left: 0.7em;
+        z-index: -1;
+    }
+
+#recipeCards {
+    display: block;
+    padding: 3em 0;
+}
+    #recipeCards li {
+        list-style-type: none;
+        display: inline-block;
+        width: 30%;
+        margin: 0 1%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-        /*.textBox > * {*/
-            /*text-align: center;*/
-        /*}*/
-        .textBox:after {
-            content: ' ';
-            position: absolute;
-            border: 1px solid #ff7900;
-            top: 0.7em;
-            right: 0.7em;
-            bottom: 0.7em;
-            left: 0.7em;
-            z-index: -1;
-        }
-
-    #recipeCards {
-        display: block;
-        padding: 3em 0;
-    }
-        #recipeCards li {
-            list-style-type: none;
+        .cardInfo {
+            position: relative;
             display: inline-block;
-            width: 30%;
-            margin: 0 1%;
+            width: 100%;
+            background: #fff;
+            /*margin-top: -1em;*/
+            padding: 2.5em 1.5em;
+            margin-top: -1.5em;
+            z-index: 1;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
-            .cardInfo {
-                position: relative;
-                display: inline-block;
-                width: 100%;
-                background: #fff;
-                /*margin-top: -1em;*/
-                padding: 2.5em 1.5em;
-                margin-top: -1.5em;
-                z-index: 1;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-                .cardInfo > h4, .cardInfo > p {
-                    margin: 0;
-                    padding: 0;
-                }
-                .cardInfo:after {
-                    content: ' ';
-                    position: absolute;
-                    top: 0.7em;
-                    right: 0.7em;
-                    bottom: 0.7em;
-                    left: 0.7em;
-                    border: 1px solid #77110f;
-                    z-index: -1;
-                }
-
-
-
-    .recipeMain ul li {
-        display: inline-block;
-        padding: 0.2em 0.7em;
-        font-size: 0.9em;
-        color: #555;
-        /*font-style: italic;*/
-    }
-        .recipeMain ul li:first-child, .recipeMain ul li:nth-child(2) {
-            border-right: 2px solid #186b8e;
-        }
-        .recipeMain ul li:nth-child(4) {
-            display: block;
-        }
-
-    .recipeMain.photoBorder {
-        width: 50%;
-    }
-
-    #recipeContainer {
-        position: relative;
-        background: #fff;
-        border: 1px solid #77110f;
-        /*padding: 3em;*/
-        width: 94%;
-        margin: 2.5em -2% 0 0;
-    }
-        #ingredients {
-            display: inline-block;
-            vertical-align: top;
-            width: 27%;
-            left: 0;
-            float: left;
-            border: 1px solid #77110f;
-            background: #f9f6f1;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-            margin: -3% 0 0 -2%;
-        }
-            #ingredients h3 {
-                background-color: #77110f;
-                color: #fff;
-                padding: 1em;
+            .cardInfo > h4, .cardInfo > p {
                 margin: 0;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
+                padding: 0;
             }
-            #ingredients h5 {
-                padding: 0 5%;
-                margin: 1.2em 0 -0.7em;
+            .cardInfo:after {
+                content: ' ';
+                position: absolute;
+                top: 0.7em;
+                right: 0.7em;
+                bottom: 0.7em;
+                left: 0.7em;
+                border: 1px solid #77110f;
+                z-index: -1;
             }
-            #ingredients ul {
-                list-style: none;
-                text-align: left;
-                width: 100%;
-                display: inline-block;
-                padding: 1em 9% 2em 9%;
-                /*font-size: 0.9em;*/
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-                #ingredients ul li {
-                    padding: .4em 0;
-                    line-height: 1.2em;
-                    border-bottom: 1px solid #cacaca;
-                }
-                    #ingredients ul li:last-child {
-                        border-bottom: none;
-                    }
-            #ingredients hr {
-                border: none;
-                border-top: 1px solid #77110f;
-            }
-        #steps{
-            display: inline-block;
-            width: 74%;
-            padding: 2em;
-            /*background: rgba(0,0,0,0.1);*/
+
+
+
+.recipeSummary ul li {
+    display: inline-block;
+    padding: 0.2em 0.7em;
+    font-size: 0.9em;
+    color: #555;
+    /*font-style: italic;*/
+}
+    .recipeSummary ul li:first-child, .recipeSummary ul li:nth-child(2) {
+        border-right: 2px solid #186b8e;
+    }
+    .recipeSummary ul li:nth-child(4) {
+        display: block;
+    }
+
+#recipeContainer {
+    position: relative;
+    background: #fff;
+    border: 1px solid #77110f;
+    /*padding: 3em;*/
+    width: 94%;
+    left: 4%;
+}
+    #ingredients {
+        display: inline-block;
+        vertical-align: top;
+        width: 27%;
+        left: 0;
+        float: left;
+        border: 1px solid #77110f;
+        background: #f9f6f1;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: -3% 0 0 -2%;
+    }
+        #ingredients h3 {
+            background-color: #77110f;
+            color: #fff;
+            padding: 1em;
+            margin: 0;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
-            #steps ul {
-                list-style: none;
-                text-align: left;
+        #ingredients h5 {
+            padding: 0 5%;
+            margin: 1.2em 0 -0.7em;
+        }
+        #ingredients ul {
+            list-style: none;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            padding: 1em 9% 2em 9%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+            #ingredients ul li {
+                padding: .4em 0;
+                line-height: 1.2em;
+                border-bottom: 1px solid #cacaca;
             }
-                #steps ul li {
-                    margin: 1.5em 2%;
-                    display: inline-block;
-                    vertical-align: top;
-                    clear: both;
-                    width: 45%;
+                #ingredients ul li:last-child {
+                    border-bottom: none;
                 }
-                #steps ul img {
-                    width: 140px;
-                    height: auto;
-                    margin: 0 0 0.9em 1em;
-                    float: right;
-                    border: 1px inset #186b8e;
+        #ingredients hr {
+            border: none;
+            border-top: 1px solid #77110f;
+        }
+    #steps{
+        display: inline-block;
+        width: 74%;
+        padding: 2em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+        #steps ul {
+            list-style: none;
+            text-align: left;
+        }
+            #steps ul li {
+                margin: 1.5em 2%;
+                display: inline-block;
+                vertical-align: top;
+                clear: both;
+                width: 45%;
+            }
+            #steps ul img {
+                width: 140px;
+                height: auto;
+                margin: 0 0 0.9em 1em;
+                float: right;
+                border: 1px inset #186b8e;
+            }
+                @media (max-width:500px) {
+                    #steps ul img {
+                        float: none;
+                        display: block;
+                        margin: 0.7em auto;
+                    }
                 }
-            #steps p {
-                text-align: left;
-            }
-            #steps hr {
-                border: none;
-                border-top: 1px solid #faa602;
-                margin: 2em 0;
-            }
+        #steps p {
+            text-align: left;
+        }
+        #steps hr {
+            border: none;
+            border-top: 1px solid #faa602;
+            margin: 2em 0;
+        }
 
 
 
@@ -435,89 +544,6 @@ section {
                 border-radius: 2px;
                 margin: -0.2em 0 0 .4em;
             }
-
-
-
-
-/* ==========================================================================
-    Floating Photos
-    ========================================================================== */
-
-.photoBorder {
-    position: relative;
-}
-    .photoBorder:after {
-        content: ' ';
-        position: absolute;
-        border: 8px solid #fff;
-        top: 0.7em;
-        right: 0.7em;
-        bottom: 1em;
-        left: 0.7em;
-        z-index: 1;
-    }
-
-#photoCooking {
-    width: 55%;
-    left: 3%;
-}
-#photoMortar {
-    width: 30%;
-    max-width: 450px;
-    margin: 4% 3% 6% 3%;
-    z-index: 2; /* overlap the Masala Dabba */
-    float: right;
-}
-#photoChilies {
-    width: 40%;
-    max-width: 500px;
-    margin: 8% 7% -3% 2%;
-    z-index: 2; /* overlap the Masala Dabba */
-    float: left;
-}
-    @media (max-width: 1150px) {
-        #photoMortar {
-            float: left;
-            clear: left;
-            margin: 8% 0 -5% 18%;
-        }
-        #photoChilies {
-            float: right;
-            margin: 6% 10% 5% 0;
-        }
-    }
-#photoDabba {
-    width: 55%;
-    z-index: 1;
-}
-    #photoDabba img {
-        position: relative;
-        width: 110%;
-        height: 110%;
-        margin: -10%;
-        border-radius: 50%;
-        box-shadow: 0.8em 1.2em 2em 1em rgba(0,0,0,0.8);
-    }
-#photoCinnamon {
-    width: 35%;
-    max-width: 380px;
-    margin: 5% 2% -12% 0;
-    z-index: 2; /* overlap the Masala Dabba */
-    float: left;
-    clear: left;
-}
-
-
-.floatRight {
-    float: right;
-    right: 5%;
-}
-.floatLeft {
-    float: left;
-    left: 5%;
-}
-
-
 
 
 
@@ -613,9 +639,6 @@ footer {
     section {
         width: 100%;
     }
-    .recipeMain {
-        margin-top: 4em;
-    }
     .textBox.recipeMain {
         margin-top: 0;
     }
@@ -623,17 +646,20 @@ footer {
 
 
 @media (max-width: 767px) {
-    .textBox, #photoCooking, #photoDabba, .recipeMain {
-        display: block !important;
-        position: relative !important;
-        float: none !important;
-        clear: both !important;
-        width: 90% !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        left: 0 !important;
-        right: 0 !important;
-        /*padding: 0 !important;*/
+    #photoCooking, #photoDabba {
+        width: 100%;
+        height: auto;
+        margin: 0 auto -1em;
+        display: block;
+    }
+    .accentImage {
+        max-width: 60%;
+    }
+    .photoBorder:after {
+        top: 0.7em;
+        right: 0.7em;
+        left: 0.7em;
+        border-bottom: none;
     }
 
     #recipeCards li {
@@ -651,6 +677,9 @@ footer {
             #recipeCards .cardInfo {
                 margin-left: -5%;
             }
+            #recipeCards ul li button:hover {
+                background: black;
+            }
 
     #ingredients {
         display: block;
@@ -662,21 +691,15 @@ footer {
         width: 100%;
         padding: 3em;
     }
-    #photoChilies, #photoCinnamon {
+
+    .floatRight, .floatLeft {
+        right: 0;
+        left: 0;
         float: none;
-        display: block;
-        width: 50%;
-        margin: 4em auto 6em;
-    }
-        #photoCinnamon {
-            margin-bottom: -2em;
-        }
-    #photoMortar {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        clear: both;
     }
 }
+
 
 
 @media (max-width: 500px) {
