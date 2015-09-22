@@ -1,3 +1,38 @@
+
+/*#loading {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*position: fixed;*/
+    /*display: block;*/
+    /*z-index: 998;*/
+    /*text-align: center;*/
+    /*opacity: 1;*/
+    /*background: #fff url(../img/flowerLoading.gif) no-repeat center center fixed;*/
+    /*background-size: 4.3em 3em;*/
+/*}*/
+/*#loading.hidden {*/
+    /*opacity: 0;*/
+    /*z-index: -999;*/
+    /*-webkit-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
+    /*-moz-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
+    /*-ms-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
+    /*transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
+/*}*/
+/*.Shrink { -webkit-animation-name: Shrink; -moz-animation-name: Shrink; -ms-animation-name: Shrink; -o-animation-name: Shrink; animation-name: Shrink; }*/
+/*@-webkit-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
+/*@-moz-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
+/*@-ms-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
+/*@keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
+
+/*#loading.show {*/
+    /*opacity: 1;*/
+    /*z-index: 998;*/
+    /*-webkit-transition: .5s opacity 0s, 0s z-index 0s; -moz-transition: .5s opacity 0s, 0s z-index 0s; -ms-transition: .5s opacity 0s, 0s z-index 0s; -o-transition: .5s opacity 0s, 0s z-index 0s; transition: .5s opacity 0s, 0s z-index 0s;*/
+/*}*/
+
+
 html {
     height: 100%;
     font-size: 16px;
@@ -94,13 +129,36 @@ ul {
 }
 
 header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #fff;
     border-top: 3px solid #77110f;
     border-bottom: 3px solid #77110f;
     z-index: 10;
 }
+    header, header #logo, header nav {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    header.scrolling{
+        position: fixed;
+        top: 0;
+    }
+    header.scrolling #logo {
+        height: 2em;
+        padding: 0.5em;
+    }
+    header.scrolling nav {
+        margin: 0.85em 0 0;
+    }
+    header.hidden {
+        margin-top: -10em;
+    }
     header.alt {
         background: rgba(0,0,0,0);
         border: none;
@@ -116,10 +174,10 @@ header {
         }
     #headerInner {
         position: relative;
-        display: inline-block;
+        display: block;
+        margin: 0.2em auto 0;
         max-width: 1400px;
         width: 90%;
-        padding: 0.2em 0;
         text-align: left;
     }
         #logo {
@@ -131,7 +189,7 @@ header {
             position: absolute;
             top: 0;
             right: 0;
-            margin: 2.2em 0 0;
+            margin: 2em 0 0;
             }
             nav li {
                 list-style-type: none;
@@ -140,7 +198,7 @@ header {
             nav a {
                 padding: 1em 1.3em;
             }
-                nav a:hover, nav a:focus {
+                nav a:hover {
                     background: #77110f;
                     color: #fff;
                 }
@@ -152,7 +210,7 @@ img#heroImage {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: -6%;
+    /*margin-top: -6%;*/
 }
 
 main {
@@ -628,13 +686,6 @@ footer {
 
 
 @media (max-width: 1024px) {
-    #logo, nav {
-        display: block;
-        position: relative;
-        margin: 1em auto;
-        float: none;
-        text-align: center;
-    }
 
     section {
         width: 100%;
@@ -644,9 +695,19 @@ footer {
     }
 }
 
+@media (max-width: 900px) {
+    #logo, nav {
+        display: block;
+        position: relative;
+        margin: 1em auto;
+        float: none;
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 767px) {
-    #photoCooking, #photoDabba {
+    #photoCooking, #photoDabba, .recipeHero {
         width: 100%;
         height: auto;
         margin: 0 auto -1em;

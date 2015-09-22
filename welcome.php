@@ -11,6 +11,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <!-- <?php include 'loading.php';?> -->
         <?php include 'header.php';?>
         <img id="heroImage" src="img/bgTopSpices.jpg" alt="Indian Spices used in cooking traditional cuisine."/>
 
@@ -33,10 +34,10 @@
                         <button>See Calendar<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
                     </a>
                 </div>
-                <div class="column6 floatRight switch mobileHide">
+                <div class="column6 floatRight mobileHide">
                     <img class="accentImage" id="photoMortar" src="img/mortar.png" alt="Mortar and Pestle: used in Indian Cooking to ground spices into powder." />
                 </div>
-                <div class="column6 floatLeft switch">
+                <div class="column6 floatLeft">
                     <img class="accentImage" id="photoChilies" src="img/chilies.png" alt="Chilies: used in many Indian Dishes to add flavor and heat." />
                 </div>
             </section>
@@ -46,7 +47,7 @@
                     <img id="photoDabba" src="img/dabbaNew.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
                 </div>
 
-                <div class="column6 floatLeft textBox" style="margin-top: 4em;">
+                <div class="column6 floatLeft textBox" style="margin-top: -2em;">
                     <div class="linkAnchor" id="MasalaDabba"></div>
                     <h2>Masala Dabba<span>(Spice Box)</span></h2>
                     <p>

@@ -22,7 +22,7 @@
 
             <section>
                 <div class="column6 photoBorder floatRight">
-                    <img src="img/recipes/pakorasMain.jpg" alt="Golden brown Spinach Pakoras." />
+                    <img class="recipeHero" src="img/recipes/pakorasMain.jpg" alt="Golden brown Spinach Pakoras." />
                 </div>
                 <div class="column6 recipeSummary textBox floatLeft">
                     <h2>Spinach Pakoras</h2>

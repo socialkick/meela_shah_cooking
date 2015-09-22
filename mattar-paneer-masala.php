@@ -22,7 +22,7 @@
 
             <section>
                 <div class="column6 photoBorder floatRight">
-                    <img src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
+                    <img class="recipeHero" src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
                 </div>
                 <div class="column6 recipeSummary textBox floatLeft">
                     <h2>Mattar Paneer Masala</h2>

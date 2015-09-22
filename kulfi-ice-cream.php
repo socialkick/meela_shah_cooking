@@ -22,7 +22,7 @@
 
             <section>
                 <div class="column6 photoBorder floatRight">
-                    <img src="img/recipes/kulfiMain.jpg" alt="Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables." />
+                    <img class="recipeHero" src="img/recipes/kulfiMain.jpg" alt="Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables." />
                 </div>
                 <div class="column6 textBox recipeSummary floatLeft">
                     <h2>Kulfi Ice Cream</h2>
