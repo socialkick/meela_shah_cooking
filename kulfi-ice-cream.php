@@ -19,13 +19,13 @@
         <div id="loading" class="show"></div>
         <?php include 'recipeHeader.php';?>
 
-        <main>
+        <main class="recipePage">
 
-            <section>
-                <div class="column6 photoBorder floatRight">
+            <section class="rightToLeft">
+                <div class="column6 photoBorder">
                     <img class="recipeHero" src="img/recipes/kulfiMain.jpg" alt="Spinach Pakoras are a fried appetizer made with chickpea flour and vegetables." />
                 </div>
-                <div class="column6 textBox recipeSummary floatLeft">
+                <div class="column6 textBox recipeSummary overlap moveRight">
                     <h2>Kulfi Ice Cream</h2>
                     <ul>
                         <li>4 Servings</li>

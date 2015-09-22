@@ -19,13 +19,13 @@
         <div id="loading" class="show"></div>
         <?php include 'recipeHeader.php';?>
 
-        <main>
+        <main class="recipePage">
 
-            <section>
-                <div class="column6 photoBorder floatRight">
+            <section class="rightToLeft">
+                <div class="column6 photoBorder">
                     <img class="recipeHero" src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
                 </div>
-                <div class="column6 recipeSummary textBox floatLeft">
+                <div class="column6 recipeSummary textBox overlap moveRight">
                     <h2>Mattar Paneer Masala</h2>
                     <ul>
                         <li>4 Servings</li>

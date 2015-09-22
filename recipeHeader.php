@@ -1,16 +1,12 @@
 <div class="linkAnchor" id="top"></div>
 
-<!--
-<header class="subpage">
-    <div id="headerInner">
-        <a href="javascript:delay('http://www.socialkick.it/meelaShah/welcome.php')">Back to Home Page</a>
-    </div>
-</header>
--->
 <header>
     <div id="headerInner">
-        <a href="welcome.php">
-            <img id="logo" src="img/logo.png" alt="Meela Shah Indian Cooking">
+        <a href="/meelaShah" id="logo" class="borderBox">
+            <!-- <img src="img/logo.png" alt="Meela Shah Indian Cooking"> -->
+            <h1>
+                Meela Shah<span>Indian Cooking</span>
+            </h1>
         </a>
         <div id="menuToggle"></div>
         <nav>
@@ -23,8 +19,6 @@
         </nav>
     </div>
 </header>
-
-<img id="heroImage" src="img/bgTopSpices.jpg" alt="Indian Spices used in cooking traditional cuisine."/>
 
 <div id="loading" class="show"></div>
 <div id="fullClose"></div>

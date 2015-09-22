@@ -1,7 +1,7 @@
 <div class="linkAnchor" id="top"></div>
 
 <header>
-    <div id="headerInner" class="clearfix">
+    <div id="headerInner" class="column  clearfix">
         <a href="#top" id="logo" class="borderBox">
             <!-- <img src="img/logo.png" alt="Meela Shah Indian Cooking"> -->
             <h1>
@@ -24,6 +24,7 @@
         </nav>
     </div>
 </header>
+
 
 <div id="loading" class="show"></div>
 <div id="fullClose"></div>

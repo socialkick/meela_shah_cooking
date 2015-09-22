@@ -19,13 +19,12 @@
         <div id="loading" class="show"></div>
         <?php include 'recipeHeader.php';?>
 
-        <main>
-
-            <section>
-                <div class="column6 photoBorder floatRight">
+        <main class="recipePage">
+            <section class="rightToLeft">
+                <div class="column6 photoBorder">
                     <img class="recipeHero" src="img/recipes/pakorasMain.jpg" alt="Golden brown Spinach Pakoras." />
                 </div>
-                <div class="column6 recipeSummary textBox floatLeft">
+                <div class="column6 recipeSummary textBox overlap moveRight">
                     <h2>Spinach Pakoras</h2>
                     <ul>
                         <li>16-20 Pieces</li>

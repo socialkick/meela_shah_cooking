@@ -13,16 +13,17 @@
         <![endif]-->
 
         <?php include 'header.php';?>
+        <img id="heroImage" src="img/bgTopSpices.jpg" alt="Indian Spices used in cooking traditional cuisine."/>
 
 
         <main>
 
             <section>
                 <div class="linkAnchor" id="ClassesAndEvents"></div>
-                <div class="column6 floatLeft photoBorder">
+                <div class="column6 overlap moveRight photoBorder">
                     <img id="photoCooking" src="img/cooking.jpg" alt="Learn to cook Indian food!" />
                 </div>
-                <div class="column6 floatRight textBox" style="margin-top: -4em;">
+                <div class="column6 overlap moveLeft textBox" style="margin-top: -4em;">
                     <h2>Let's Cook Together</h2>
                     <p>
                         My name is Meela Shah I teach Indian cooking classes in the San Francisco Bay Area.
@@ -34,20 +35,20 @@
                         <button>See Calendar<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
                     </a>
                 </div>
-                <div class="column6 floatRight mobileHide">
-                    <img class="accentImage" id="photoMortar" src="img/mortar.png" alt="Mortar and Pestle: used in Indian Cooking to ground spices into powder." />
-                </div>
-                <div class="column6 floatLeft">
+                <div class="column6">
                     <img class="accentImage" id="photoChilies" src="img/chilies.png" alt="Chilies: used in many Indian Dishes to add flavor and heat." />
+                </div>
+                <div class="column6 rightFloat mobileHide">
+                    <img class="accentImage" id="photoMortar" src="img/mortar.png" alt="Mortar and Pestle: used in Indian Cooking to ground spices into powder." />
                 </div>
             </section>
 
-            <section>
+            <section class="rightToLeft">
                 <div class="linkAnchor" id="MasalaDabba"></div>
-                <div class="column6 floatRight photoBorder">
+                <div class="column6 overlap moveLeft photoBorder">
                     <img id="photoDabba" src="img/dabbaNew.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
                 </div>
-                <div class="column6 floatLeft textBox" style="margin-top: -2em;">
+                <div class="column6 overlap moveRight textBox" style="margin-top: -2em;">
                     <h2>Masala Dabba<span>(Spice Box)</span></h2>
                     <p>
                         The heart of the Indian kitchen is the Masala Dabba.
@@ -59,7 +60,9 @@
                         <button>Order a Dabba</button>
                     </a>
                 </div>
-                <div class="column6 floatLeft">
+                <div class="column6 mobileHide0000001v">
+                </div>
+                <div class="column6">
                     <img class="accentImage" id="photoCinnamon" src="img/cinnamon.png" alt="Cinnamon: a warm spice with intense flavor that is great for circulatory system health." />
                 </div>
             </section>

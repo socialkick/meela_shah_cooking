@@ -193,10 +193,10 @@ header {
                         padding: 1em;
                         color: #333;
                         text-transform: uppercase;
-                        font-weight: bold;
+                        /*font-weight: bold;*/
                         border-right: 1px solid rgba(24, 107, 142, 0.3);
                     }
-                        header:hover nav a {
+                        nav:hover a {
                             color: #888;
                         }
                         nav a:hover {
@@ -205,20 +205,6 @@ header {
                         nav a:active {
                             color: #3c0908;
                         }
-
-        header.subpage {
-            background: rgba(0,0,0,0);
-            border: none;
-            float: left;
-        }
-            header.subpage #headerInner a {
-                float: left;
-                padding: 1em;
-                margin: 1em 0;
-                border-right: 1px solid #186b8e;
-                border-left: 1px solid #186b8e;
-                background: #eee;
-            }
 
 
     /* Header Scrolling Styles */
@@ -237,24 +223,31 @@ header {
     /*margin-top: -10em;*/
     /*}*/
 
-            /* Mobile Menu Styles */
+        /* Mobile Menu Styles */
 
-            #menuToggle {
-                display: none;
+        #menuToggle {
+            display: none;
+        }
+            #fullClose {
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: -100%;
+                background: rgba(0,0,0,0);
+                z-index: 9;
+                -webkit-transition: background 0.2s ease-in-out;
+                -moz-transition: background 0.2s ease-in-out;
+                transition: background 0.2s ease-in-out;
             }
-                #fullClose {
-                    display: none;
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    top: 0; right: 0; bottom: 0; left: 0;
-                    background: rgba(0,0,0,0);
-                    z-index: 9;
+                #fullClose.active {
+                    /*display: block;*/
+                    left: 0;
+                    background: rgba(0,0,0,0.5);
                 }
-                    #fullClose.active {
-                        display: block;
-                        background: rgba(0,0,0,0.5);
-                    }
 
 img#heroImage {
     width: 100%;
@@ -289,7 +282,7 @@ main {
     height: 0;
     width: 0;
     position: absolute;
-    margin-top: -10%;
+    margin-top: -12em;
 }
 
 section {
@@ -300,111 +293,22 @@ section {
     max-width: 1400px;
     width: 80%;
 }
-        section:after {
-            content: " ";
-            clear: both;
-            visibility: hidden;
-            display: block;
-            height: 0;
-            width: 0;
-        }
+    section:after {
+        content: " ";
+        clear: both;
+        visibility: hidden;
+        display: block;
+        height: 0;
+        width: 0;
+    }
 
 
 
 /* ------------------------------------------------------------
 
-    NEW COLUMN SYSTEM
+    FLOATING PHOTOS
 
 ------------------------------------------------------------  */
-
-.column3, .column4, .column6, .column12 {
-    position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    /* all columns are fractions of a 96% width */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-    .column12 {
-        width: 96%
-    }
-    .column6 {
-        width: 48%;
-    }
-    .column4 {
-        width: 32%;
-    }
-    .column3 {
-        width: 24%;
-    }
-
-    .mobileHide {
-        position: relative;
-        overflow: auto;
-    }
-        @media (max-width: 767px) {
-            .mobileHide {
-                position: absolute;
-                overflow: hidden;
-                height: 1px; width: 1px;
-                margin: -1px; padding: 0; border: 0;
-            }
-        }
-    .mobileOnly {
-        position: absolute;
-        overflow: hidden;
-        height: 1px; width: 1px;
-        margin: -1px; padding: 0; border: 0;
-
-    }
-        @media (max-width: 767px) {
-            .mobileOnly {
-                position: relative;
-                overflow: auto;
-            }
-        }
-
-    @media (max-width:767px) {
-        .column3, .column4, .column6, .column12 {
-            display: block;
-            width: 96%;
-            max-width: 550px;
-            left: 0 !important;
-            right: 0 !important;
-            float: none !important;
-            margin: 0 auto !important;
-        }
-    }
-
-
-    .floatLeft {
-        float: left;
-        clear: left;
-        left: 5%;
-    }
-    .floatRight {
-        float: right;
-        clear: right;
-        right: 5%;
-    }
-    @media (max-width:1200px) {
-        .floatLeft.switch {
-            float: right;
-            clear: right;
-            left: -5%;
-        }
-        .floatRight.switch {
-            float: left;
-            clear: left;
-            right: -5%;
-        }
-    }
-
-
-/* ==========================================================================
-    Floating Photos
-    ========================================================================== */
 
 .photoBorder {
     position: relative;
@@ -430,26 +334,45 @@ section {
     position: relative;
     width: 120%;
     height: 120%;
-    margin: -15%;
+    margin: -15% -15% -25%;
     border-radius: 50%;
     box-shadow: 0.8em 1.2em 2em 1em rgba(0,0,0,0.8);
 }
 
 .accentImage {
     display: block;
-    margin: 14% auto 10%;
     max-width: 350px;
-    vertical-align: middle;
 }
     #photoMortar {
         width: 60%;
+        margin: -10% auto 10%;
     }
     #photoChilies {
+        width: 80%;
+        margin: 15% auto 5%;
     }
     #photoCinnamon {
+        width: 60%;
+        margin: 5% auto -2%;
+    }
+    @media (max-width: 1200px) {
+        #photoMortar {
+            margin: 8% auto 10%;
+        }
+        #photoChilies {
+            margin: 0 auto 18%;
+        }
+        #photoCinnamon {
+        }
     }
 
 
+
+/* ------------------------------------------------------------
+
+    TEXT BOXES
+
+------------------------------------------------------------  */
 
 .textBox {
     position: relative;
@@ -471,6 +394,14 @@ section {
              left: 0.7em;
              z-index: -1;
          }
+
+
+
+/* ------------------------------------------------------------
+
+    RECIPE CARDS (on homepage)
+
+------------------------------------------------------------  */
 
 #recipeCards {
     display: block;
@@ -515,6 +446,21 @@ section {
 
 
 
+
+/* ------------------------------------------------------------
+
+    RECIPE PAGES
+
+------------------------------------------------------------  */
+
+
+main.recipePage {
+    padding-top: 8em;
+}
+    .recipePage section:nth-of-type(1) > div {
+        vertical-align: middle;
+    }
+
 .recipeSummary ul li {
     display: inline-block;
     padding: 0.2em 0.7em;
@@ -531,24 +477,23 @@ section {
 
 #recipeContainer {
     position: relative;
+    display: block;
+    margin: 0 auto;
     background: #fff;
     border: 1px solid #77110f;
-    /*padding: 3em;*/
     width: 94%;
-    left: 1%;
 }
     #ingredients {
         display: inline-block;
         vertical-align: top;
-        width: 27%;
-        left: 0;
+        width: 26%;
         float: left;
         border: 1px solid #77110f;
         background: #f9f6f1;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin: -3% 0 0 -2%;
+        margin: -3% 0 0;
     }
         #ingredients h3 {
             font-size: 1.3em;
@@ -640,6 +585,10 @@ section {
         text-transform: uppercase;
         letter-spacing: 1px;
         background: #fff;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
         button.small {
             font-size: 0.8em;
@@ -673,6 +622,7 @@ footer {
     padding: 3em;
     background: #333;
     border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -728,7 +678,45 @@ footer {
 
 
 
+/* ------------------------------------------------------------
 
+    NEW COLUMN SYSTEM
+
+------------------------------------------------------------  */
+
+.column3, .column4, .column6, .column12 {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    /* all columns are fractions of a 96% width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .column12 {
+        width: 96%
+    }
+    .column6 {
+        width: 48%;
+    }
+    .column4 {
+        width: 32%;
+    }
+    .column3 {
+        width: 24%;
+    }
+
+    @media (max-width:767px) {
+        .column3, .column4, .column6, .column12 {
+            display: block;
+            width: 96%;
+            max-width: 550px;
+            left: 0 !important;
+            right: 0 !important;
+            float: none !important;
+            margin: 0 auto !important;
+        }
+    }
 
 
 
@@ -763,9 +751,9 @@ footer {
     section {
         width: 90%;
     }
-    #steps li {
+    #steps ul li {
         display: block;
-        margin: 2% auto;
+        margin: 4% auto;
         width: 90%;
         max-width: 600px;
     }
@@ -830,6 +818,9 @@ footer {
         text-align: center;
         background: #fff;
     }
+        nav.active {
+            left: 0;
+        }
         nav ul {
             height: auto;
             width: 100%;
@@ -845,12 +836,9 @@ footer {
                     font-size: 1.2em;
                     padding: 1em 0;
                 }
-
-    /* Menu Toggle On */
-
-    nav.active {
-        left: 0;
-    }
+                nav:hover a {
+                    color: #333;
+                }
 }
 
 
@@ -870,15 +858,9 @@ footer {
             header h1 span {
                 letter-spacing: 0.23em;
             }
-        /*#menuToggle, #menuToggle.active {*/
-            /*-webkit-background-size: 20px 16px;*/
-            /*-moz-background-size: 20px 16px;*/
-            /*background-size: 20px 16px;*/
-        /*}*/
-        #heroImage {
-            /*margin-top: 3em;*/
+        .linkAnchor {
+            margin-top: -8em;
         }
-
 
     #photoCooking, #photoDabba, .recipeHero {
         width: 100%;
@@ -886,9 +868,12 @@ footer {
         margin: 0 auto -1em;
         display: block;
     }
+
     .accentImage {
         max-width: 60%;
+        margin: 15% auto 5% !important;
     }
+
     .photoBorder:after {
         top: 0.7em;
         right: 0.7em;
@@ -901,19 +886,22 @@ footer {
         width: 100%;
         margin: 0;
     }
-        #recipeCards li > * {
-            display: inline-block;
-            vertical-align: middle;
-            width: 45%;
-            height: auto;
-            margin: 0 auto 1em;
-        }
-            #recipeCards .cardInfo {
-                margin-left: -5%;
-            }
-            #recipeCards ul li button:hover {
-                background: black;
-            }
+
+    #recipeCards ul li:hover button.small {
+        background-color: black;
+    }
+
+    #recipeCards li > * {
+        display: inline-block;
+        vertical-align: middle;
+        width: 45%;
+        height: auto;
+        margin: 0 auto 1em;
+    }
+
+    #recipeCards .cardInfo {
+        margin-left: -5%;
+    }
 
     #ingredients {
         display: block;
@@ -921,25 +909,17 @@ footer {
         float: none;
         margin: -2em auto 0;
     }
-    #steps{
+
+    #steps {
         width: 100%;
-        padding: 3em;
+        padding: 2em;
     }
-
-    .floatRight, .floatLeft {
-        right: 0;
-        left: 0;
-        float: none;
-        clear: both;
-    }
-
-
-    #footerInner > * {
-        padding: 1em 0;
-        border: none;
-    }
+        #steps ul li {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
 }
-
 
 
 @media (max-width: 500px) {
@@ -952,10 +932,15 @@ footer {
         #headerToggle {
             width: 4em;
         }
+        .linkAnchor {
+            margin-top: -4em;
+        }
     #logo {
         /*height: 1.4em !important;*/
         /*padding: 1.3em 1em;*/
     }
+
+
     #recipeCards li > * {
         display: block;
         width: 68%;
@@ -965,6 +950,11 @@ footer {
         width: 68%;
         margin: -1.5em auto 1em;
     }
+
+    #steps ul li {
+        margin: 10% auto;
+    }
+
     footer {
         padding: 2em 1em;
     }
@@ -1067,6 +1057,63 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 /* ==========================================================================
    Tools
    ========================================================================== */
+
+
+.rightToLeft {
+    direction: rtl;
+}
+
+.overlap {
+    display: inline-block;
+    vertical-align: top;
+}
+.overlap.moveRight {
+    margin-right: -4%
+}
+.overlap.moveLeft {
+    margin-left: -4%;
+}
+
+/* Add this to every non-full-width area */
+/*.mainColumn {*/
+    /*width: 90%;*/
+    /*max-width: 1400px;*/
+/*}*/
+
+
+
+/* ---------------------------
+ MAKE PRIMARY COLORS AND BG-COLOR CLASSES
+--------------------------- */
+
+
+
+.mobileHide {
+    position: relative;
+    overflow: visible;
+}
+    @media (max-width: 767px) {
+        .mobileHide {
+            position: absolute;
+            overflow: hidden;
+            height: 1px; width: 1px;
+            margin: -1px; padding: 0; border: 0;
+        }
+    }
+.mobileOnly {
+    position: absolute;
+    overflow: hidden;
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+
+}
+    @media (max-width: 767px) {
+        .mobileOnly {
+            position: relative;
+            overflow: auto;
+        }
+    }
+
 
 .cover {
     /*background: url(../img/bgPurple.jpg) no-repeat fixed 50% 65%;*/
