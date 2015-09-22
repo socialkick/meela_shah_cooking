@@ -2,8 +2,8 @@
 <html class="no-js" lang="">
     <head>
 
-        <title>Recipe: Mattar Paneer Masala - Meela Shah Indian Cooking</title>
-        <meta name="description" content="4 Servings, 15min Prep, 45min Cook. Learn how to cook Mattar Paneer Masala, a vegetarian entree from North Indian that uses paneer cheese, peas, and a tomato based sauce. Using earthy spices to gain it's powerful flavor, it goes will with naan, rice, and yogurt.">
+        <title>Recipe: Mattar Paneer Curry - Meela Shah Indian Cooking</title>
+        <meta name="description" content="4 Servings, 15min Prep, 45min Cook. Learn how to cook Mattar Paneer Curry, a vegetarian entree from North Indian that uses paneer cheese, peas, and a tomato based sauce. Using earthy spices to gain it's powerful flavor, it goes will with naan, rice, and yogurt.">
         <?php include 'headItems.php';?>
 
     </head>
@@ -22,18 +22,18 @@
 
             <section class="rightToLeft">
                 <div class="column6 photoBorder">
-                    <img class="recipeHero" src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Masala." />
+                    <img class="recipeHero" src="img/recipes/mattarPaneerMain.jpg" alt="A bowl of Mattar Paneer Curry." />
                 </div>
                 <div class="column6 recipeSummary textBox overlap moveRight">
-                    <h2>Mattar Paneer Masala</h2>
+                    <h2>Mattar Paneer Curry</h2>
                     <ul>
                         <li>4 Servings</li>
                         <li>15min Prep</li>
                         <li>45min Cook</li>
                     </ul>
                     <p>
-                        This is a vegetarian entree from North Indian that uses paneer cheese, peas, and a tomato based sauce.
-                        Using earthy spices to gain it's powerful flavor, it goes will with naan, rice, and yogurt.
+                        This is a vegetarian entree from Northern India that uses paneer cheese, peas, and a tomato based sauce.
+                        Using earthy spices to gain it's powerful flavor, it goes well with naan, rice, and yogurt.
                     </p>
                 </div>
             </section>
@@ -103,7 +103,7 @@
                             <li>
                                 <img src="img/recipes/mattarPaneer3.jpg" alt="Tomatoes and tomato paste form the base for the sauce." />
                                 <h6>4 - Make the Sauce.</h6>
-                                Add the garlic and the prepared Spice Mix (fenugreek, curry powder, turmeric, red chili powder and salt). Sauté for 1 minute. Add the tomatoes, tomato paste and hot water. Cover with a lid and simmer (approx. 5-8 min), stirring occasionally.
+                                Add the tomatoes, tomato paste and hot water. Cover with a lid and simmer (approx. 5-8 min), stirring occasionally.
                             </li>
                             <li>
                                 <h6>5 - Add Peas & Taste.</h6>

@@ -19,7 +19,7 @@
             <section>
 
                 <div class="column6 textBox">
-                    <h2>Request a Masala Dabba</h2>
+                    <h2>Request a Masala Dabba<span>(Spice Box)</span></h2>
                     <p>
                         My dabbas are made to order to ensure freshness, so availability can be limited.
                         Please contact me for more information.

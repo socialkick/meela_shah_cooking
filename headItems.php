@@ -8,7 +8,6 @@
 <meta name="rating" content="General">
 <meta name="robots" content="index, follow">
 
-
 <link rel="icon" type="image/ico" href="img/favicon.ico">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 

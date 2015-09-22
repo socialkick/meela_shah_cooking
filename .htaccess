@@ -990,6 +990,11 @@ FileETag None
 
 
 
+
+
+
+
+
 # ----------------------------------------------------------------------
 # | MY CHANGES                                                         |
 # ----------------------------------------------------------------------
@@ -1008,16 +1013,25 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
 
 
-ErrorDocument 400 http://www.meelashah.com/400
-ErrorDocument 401 http://www.meelashah.com/401
-ErrorDocument 403 http://www.meelashah.com/403
-ErrorDocument 404 http://www.meelashah.com/404
-ErrorDocument 500 http://www.meelashah.com/500
+ErrorDocument 400 http://meelashahcooking.com/error
+ErrorDocument 401 http://meelashahcooking.com/error
+ErrorDocument 403 http://meelashahcooking.com/error
+ErrorDocument 404 http://meelashahcooking.com/error
+ErrorDocument 500 http://meelashahcooking.com/error
 
-Redirect 301 /config http://www.fbi.gov
-Redirect 301 /config-wp http://www.fbi.gov
-Redirect 301 /admin http://www.fbi.gov
-Redirect 301 /user http://www.fbi.gov
-Redirect 301 /edit http://www.fbi.gov
-Redirect 301 /dashboard http://www.fbi.gov
-Redirect 301 /login http://www.fbi.gov
+redirect /400 http://meelashahcooking.com/error
+redirect /401 http://meelashahcooking.com/error
+redirect /402 http://meelashahcooking.com/error
+redirect /403 http://meelashahcooking.com/error
+redirect /404 http://meelashahcooking.com/error
+redirect /500 http://meelashahcooking.com/error
+
+Redirect 301 /config        http://meelashahcooking.com/error
+Redirect 301 /config-wp     http://meelashahcooking.com/error
+Redirect 301 /admin         http://meelashahcooking.com/error
+Redirect 301 /user          http://meelashahcooking.com/error
+Redirect 301 /edit          http://meelashahcooking.com/error
+Redirect 301 /dashboard     http://meelashahcooking.com/error
+Redirect 301 /login         http://meelashahcooking.com/error
+Redirect 301 /account       http://meelashahcooking.com/error
+Redirect 301 /cpanel        http://meelashahcooking.com/error

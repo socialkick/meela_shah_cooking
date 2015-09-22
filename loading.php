@@ -1,1 +1,1 @@
-<div id="loading" class="active"></div>
+<div id="loading"></div>

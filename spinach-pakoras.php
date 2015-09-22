@@ -74,7 +74,7 @@
                             <li>
                                 <img src="img/recipes/pakoras1.jpg" alt="Bowl with pakora ingredients ready to be mixed." />
                                 <h6>1 - Ready the Ingredients.</h6>
-                                Make sure the spinach is finely chopped; onions very finely diced & garlic, chili, are very finely minced.
+                                Make sure the spinach is finely chopped; onions very finely diced and the garlic & chili are very finely minced.
                             </li>
                             <li>
                                 <img src="img/recipes/pakoras2.jpg" alt="Bowl with pakora ingredients ready to be mixed." />
@@ -88,7 +88,7 @@
                                 <img src="img/recipes/pakoras3.jpg" alt="Example of making the balls with your hands." />
                                 <h6>3 - Start the Frying.</h6>
                                 Once the oil has full heated, it's time to make the balls.
-                                Using a tablespoon (or your fingers) scoop up the mixture and make 1 1/2 inch round balls, then add them to the fryer.
+                                Using a tablespoon (or your fingers) scoop up the mixture and make 1-1/2 inch round balls, then add them to the fryer.
                                 Keep turning them around in the fryer to ensure all sides are cooked, until they are golden brown.
                             </li>
                             <li>

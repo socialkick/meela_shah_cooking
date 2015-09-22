@@ -215,9 +215,6 @@ header {
         header.notTop h1 {
             font-size: 1.45em;
         }
-    /*header.hidden {*/
-    /*margin-top: -10em;*/
-    /*}*/
 
         /* Mobile Menu Styles */
 
@@ -249,7 +246,6 @@ img#heroImage {
     width: 100%;
     height: auto;
     display: block;
-    /*margin-top: -6%;*/
 }
 
 main {
@@ -452,6 +448,7 @@ section {
 ------------------------------------------------------------  */
 
 
+
 main.recipePage {
     padding-top: 8em;
 }
@@ -459,118 +456,125 @@ main.recipePage {
         vertical-align: middle;
     }
 
-.recipeSummary ul li {
-    display: inline-block;
-    padding: 0.2em 0.7em;
-    font-size: 0.9em;
-    color: #555;
-    /*font-style: italic;*/
-}
-    .recipeSummary ul li:first-child, .recipeSummary ul li:nth-child(2) {
-        border-right: 2px solid #186b8e;
+    .recipeSummary ul li {
+        display: inline-block;
+        padding: 0.2em 0.7em;
+        font-size: 0.9em;
+        color: #555;
+        /*font-style: italic;*/
     }
-    .recipeSummary ul li:nth-child(4) {
+        .recipeSummary ul li:first-child, .recipeSummary ul li:nth-child(2) {
+            border-right: 2px solid #186b8e;
+        }
+        .recipeSummary ul li:nth-child(4) {
+            display: block;
+        }
+
+    #recipeContainer {
+        position: relative;
         display: block;
-    }
-
-#recipeContainer {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    background: #fff;
-    border: 1px solid #77110f;
-    width: 94%;
-}
-    #ingredients {
-        display: inline-block;
-        vertical-align: top;
-        width: 26%;
-        float: left;
+        margin: 0 auto;
+        background: #fff;
         border: 1px solid #77110f;
-        background: #f9f6f1;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        margin: -3% 0 0;
+        width: 94%;
     }
-        #ingredients h3 {
-            font-size: 1.3em;
-            background-color: #77110f;
-            color: #fff;
-            padding: 1em;
-            margin: 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        #ingredients h5 {
-            padding: 0 5%;
-            margin: 1.2em 0 -0.7em;
-        }
-        #ingredients ul {
-            list-style: none;
-            text-align: left;
-            width: 100%;
+        #ingredients {
             display: inline-block;
-            padding: 1em 9% 2em 9%;
+            vertical-align: top;
+            width: 26%;
+            float: left;
+            border: 1px solid #77110f;
+            background: #f9f6f1;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: -3% 0 0 -1px;
+        }
+            #ingredients h3 {
+                font-size: 1.3em;
+                background-color: #77110f;
+                color: #fff;
+                padding: 1em;
+                margin: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            #ingredients h5 {
+                padding: 0 5%;
+                margin: 1.2em 0 -0.7em;
+            }
+            #ingredients ul {
+                list-style: none;
+                text-align: left;
+                width: 100%;
+                display: inline-block;
+                padding: 1em 9% 2em 9%;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+                #ingredients ul li {
+                    padding: .4em 0;
+                    line-height: 1.2em;
+                    border-bottom: 1px solid #cacaca;
+                }
+                    #ingredients ul li:last-child {
+                        border-bottom: none;
+                    }
+            #ingredients hr {
+                border: none;
+                border-top: 1px solid #77110f;
+            }
+        #steps{
+            display: inline-block;
+            width: 74%;
+            padding: 2em;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
-            #ingredients ul li {
-                padding: .4em 0;
-                line-height: 1.2em;
-                border-bottom: 1px solid #cacaca;
+            #steps ul {
+                list-style: none;
+                text-align: justify;
             }
-                #ingredients ul li:last-child {
-                    border-bottom: none;
+                #steps ul li {
+                    margin: 1.5em 2%;
+                    display: inline-block;
+                    vertical-align: top;
+                    clear: both;
+                    width: 45%;
                 }
-        #ingredients hr {
-            border: none;
-            border-top: 1px solid #77110f;
-        }
-    #steps{
-        display: inline-block;
-        width: 74%;
-        padding: 2em;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-        #steps ul {
-            list-style: none;
-            text-align: left;
-        }
-            #steps ul li {
-                margin: 1.5em 2%;
-                display: inline-block;
-                vertical-align: top;
-                clear: both;
-                width: 45%;
-            }
-            #steps ul img {
-                width: 140px;
-                height: auto;
-                margin: 0 0 0.9em 1em;
-                float: right;
-                border: 1px inset #186b8e;
-            }
-                @media (max-width:500px) {
-                    #steps ul img {
-                        float: none;
-                        display: block;
-                        margin: 0.7em auto;
+                #steps ul img {
+                    width: 140px;
+                    height: auto;
+                    margin: 0 0 0.9em 1em;
+                    float: right;
+                    border: 1px inset #186b8e;
+                }
+                    @media (max-width:500px) {
+                        #steps ul img {
+                            float: none;
+                            display: block;
+                            margin: 0.7em auto;
+                        }
                     }
-                }
-        #steps p {
-            text-align: left;
-        }
-        #steps hr {
-            border: none;
-            border-top: 1px solid #faa602;
-            margin: 2em 0;
-        }
+            #steps p {
+                text-align: left;
+            }
+            #steps hr {
+                border: none;
+                border-top: 1px solid #faa602;
+                margin: 2em 0;
+            }
 
+
+
+/* ------------------------------------------------------------
+
+    BUTTON STYLES
+
+------------------------------------------------------------  */
 
 
 
@@ -628,6 +632,14 @@ main.recipePage {
             }
 
 
+/* ------------------------------------------------------------
+
+    FOOTER STYLES
+
+------------------------------------------------------------  */
+
+
+
 footer {
     position: relative;
     /*min-height: 20em;*/
@@ -683,9 +695,11 @@ footer {
 
 /* ------------------------------------------------------------
 
-    NEW COLUMN SYSTEM
+    COLUMN SYSTEM
 
 ------------------------------------------------------------  */
+
+
 
 .column3, .column4, .column6, .column12 {
     position: relative;
@@ -709,18 +723,6 @@ footer {
         width: 24%;
     }
 
-    @media (max-width:767px) {
-        .column3, .column4, .column6, .column12 {
-            display: block;
-            width: 96%;
-            max-width: 550px;
-            left: 0 !important;
-            right: 0 !important;
-            float: none !important;
-            margin: 0 auto !important;
-        }
-    }
-
 
 
 /* ------------------------------------------------------------
@@ -728,6 +730,8 @@ footer {
     DABBA ORDER PAGE
 
 ------------------------------------------------------------  */
+
+
 
 main.dabba {
     padding: 10em 0 8em;
@@ -859,7 +863,7 @@ main.dabba {
         display: block;
         float: right;
         height: 100%;
-        width: 5em;
+        width: 4em;
         z-index: 11;
         cursor: pointer;
         background: url(../img/hamburger.png) center no-repeat;
@@ -871,9 +875,6 @@ main.dabba {
             -webkit-background-size: 20px 16px;
             -moz-background-size: 20px 16px;
             background-size: 20px 16px;
-        }
-        header.notTop #menuToggle {
-            width: 4em;
         }
 
     nav {
@@ -916,7 +917,20 @@ main.dabba {
        /*only screen and (        min-device-pixel-ratio: 2)      and (max-width: 767px),*/
        /*only screen and (                min-resolution: 192dpi) and (max-width: 767px),*/
        /*only screen and (                min-resolution: 2dppx)  and (max-width: 767px) {*/
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
+
+    .column3, .column4, .column6, .column12 {
+        display: block;
+        width: 96%;
+        max-width: 550px;
+        left: 0 !important;
+        right: 0 !important;
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+
     header {
         height: 4em;
     }
@@ -1163,7 +1177,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     position: relative;
     overflow: visible;
 }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         .mobileHide {
             position: absolute;
             overflow: hidden;
@@ -1178,7 +1192,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     margin: -1px; padding: 0; border: 0;
 
 }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         .mobileOnly {
             position: relative;
             overflow: auto;

@@ -26,10 +26,9 @@
                 <div class="column6 overlap moveLeft textBox" style="margin-top: -4em;">
                     <h2>Let's Cook Together</h2>
                     <p>
-                        My name is Meela Shah I teach Indian cooking classes in the San Francisco Bay Area.
-                        Learn how to use exotic spices and their incredible health benefits.
-                        I also hold demonstrations and events at local businesses
-                        where you can come enjoy samples of my cooking.
+                        My name is Meela Shah and I teach Indian cooking classes in the San Francisco Bay Area,
+                        sharing knowledge of exotic spices and their health benefits.
+                        I also hold demonstrations at events and local businesses where you can come enjoy samples of my cooking.
                     </p>
                     <a href="https://www.facebook.com/pages/Meela-Shah-Indian-Cooking/459450137418684?sk=events&ref=page_internal" target="blank">
                         <button class="primary">See Calendar<img src="img/facebookIcon.png" alt="Facebook Icon, link to Meela Shah Indian Cooking" /></button>
@@ -44,7 +43,7 @@
             </section>
 
             <section class="rightToLeft">
-                <div class="linkAnchor" id="MasalaDabba"></div>
+                <div class="linkAnchor" id="SpiceBoxes"></div>
                 <div class="column6 overlap moveLeft photoBorder">
                     <img id="photoDabba" src="img/dabba.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
                 </div>
@@ -53,10 +52,9 @@
                     <p>
                         The heart of the Indian kitchen is the Masala Dabba.
                         It contains the spices you'll need to start cooking Indian food at home.
-                        A complete Dabba costs $30 (spices included),
-                        and I can also provide you with extra spices refills.
+                        A complete Dabba costs $30 (spices included).
                     </p>
-                    <a href="javascript:delay('dabbaRequestForm.php')">
+                    <a href="javascript:delay('dabbaRequestForm')">
                         <button class="primary">Request a Dabba</button>
                     </a>
                 </div>
@@ -83,15 +81,15 @@
                         <div class="cardInfo">
                             <h4>Spinach Pakoras</h4>
                             <p>makes 16-20</p>
-                            <a href="javascript:delay('spinach-pakoras.php')"><button class="primary small">View Recipe</button></a>
+                            <a href="javascript:delay('spinach-pakoras')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
-                        <img src="img/mattarPaneerZoom.jpg" alt="Mattar Paneer Masala is a traditional Indian dish made with cheese, often served with rice and chapatis." />
+                        <img src="img/mattarPaneerZoom.jpg" alt="Mattar Paneer Curry is a traditional Indian dish made with cheese, often served with rice and chapatis." />
                         <div class="cardInfo">
-                            <h4>Mattar Paneer Masala</h4>
+                            <h4>Mattar Paneer Curry</h4>
                             <p>serves 3-4</p>
-                            <a href="javascript:delay('mattar-paneer-masala.php')"><button class="primary small">View Recipe</button></a>
+                            <a href="javascript:delay('mattar-paneer-curry')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
@@ -99,7 +97,7 @@
                         <div class="cardInfo">
                             <h4>Kulfi Ice Cream</h4>
                             <p>serves 3-4</p>
-                            <a href="javascript:delay('kulfi-ice-cream.php')"><button class="primary small">View Recipe</button></a>
+                            <a href="javascript:delay('kulfi-ice-cream')"><button class="primary small">View Recipe</button></a>
                         </div>
                     </li>
                 </ul>

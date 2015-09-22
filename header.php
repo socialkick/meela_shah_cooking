@@ -14,7 +14,7 @@
                 <li>
                     <a href="#ClassesAndEvents">Classes & Events</a>
                 </li><li>
-                    <a href="#MasalaDabba">Spice Boxes</a>
+                    <a href="#SpiceBoxes">Spice Boxes</a>
                 </li><li>
                     <a href="#Recipes">Recipes</a>
                 </li><li>

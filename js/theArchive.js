@@ -2,22 +2,18 @@
 
 
 // ---------- PRE LOAD ----------
-{
-//    $(window)(function(){
-//        $('body').addClass('fadeInDelay');
-//    });
+
 
     $(window).load(function() {
         setTimeout(function(){
             $('#loading').addClass('hidden');
-        }, 200);
+        }, 0);
     });
-    // To add a delay, change ending 0
-}
+
 
 // ---------- DELAY A LINK ----------
 // HTML NOTE, within the html, use: href="javascript:delay('URL')"
-{
+
     function delay(URL) {
         setTimeout(function () {
             window.location = URL
@@ -31,13 +27,24 @@
             all_links[i].removeAttribute("href");
         }
     }
-}
+
+
+// ---------- LOADING EFFECTS ON REFRESH KEY ----------
+
+
+// Disabled because the loading screen can't fully appear before the page releads
+
+//    $(document.body).on("keydown", this, function (event) {
+//        if (event.keyCode == 116) {
+//            $('#loading').removeClass('hidden');
+//        }
+//    });
 
 
 
 
 // ---------- (TOP) ON SCROLL EFFECTS ----------
-{
+
     var scroll_pos = 0;
     var scroll_time;
 
@@ -81,11 +88,6 @@
     });
 
 
-
-
-
-}
-
 // ---------- MENU TOGGLE & NAV CLICKS ----------
 
     $("#menuToggle").click(function(){
@@ -107,7 +109,7 @@
 
 
 // ---------- SMOOTH SCROLL ----------
-{
+
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -123,7 +125,7 @@
             }
         });
     });
-}
+
 
 
 

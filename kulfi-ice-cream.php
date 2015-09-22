@@ -3,7 +3,7 @@
     <head>
 
         <title>Recipe: Kulfi Ice Cream - Meela Shah Indian Cooking</title>
-        <meta name="description" content="4 Servings, 15min Prep, 10min Cook (4hrs inactive). Learn how to cook Kulfi, a very creamy Indian ice cream. It is made with sweet spices such as green cardamom & saffron, and nuts like pistachios & almonds.">
+        <meta name="description" content="4 Servings, 15min Prep, 10min Cook (4hrs inactive). Learn how to cook Kulfi, a very creamy Indian ice cream. It is made with sweet spices such as green cardamom & saffron, and nuts such as pistachios & almonds.">
         <?php include 'headItems.php';?>
 
     </head>
@@ -63,8 +63,8 @@
                     <div id="steps">
                         <h3>Preparation</h3>
                         <p>
-                            To more easily skin the almonds and the shelled pistachios, soak them in water first.
-                            To ground the green cardamom seeds, you can use a mortal & pistol, coffee grinder or small blender.
+                            To more easily skin the almonds and the shelled pistachios, soak them in boiling water for 1-2 minutes.
+                            To ground the green cardamom seeds, you can use a mortal & pestle, coffee grinder or small blender.
                         </p>
                         <hr>
                         <h3>Directions</h3>
@@ -77,7 +77,7 @@
                             <li>
                                 <img src="img/recipes/kulfi2.jpg" alt="Whipped cream being added to the mixture." />
                                 <h6>2 - Whip the Cream.</h6>
-                                Whip the cream until slightly stiff, then gently stir into the mixture.
+                                Whip the cream until slightly stiff, then gently fold into the mixture.
                             </li>
                             <li>
                                 <img src="img/recipes/kulfi3.jpg" alt="Kulfi mixture being added to molds." />
