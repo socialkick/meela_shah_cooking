@@ -1,3 +1,1 @@
-<div id="loading" class="show">
-    <img src="img/loading/logoLoading.gif">
-</div>
+<div id="loading" class="show"></div>

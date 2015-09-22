@@ -1,39 +1,44 @@
-
 /*#loading {*/
     /*width: 100%;*/
     /*height: 100%;*/
-    /*top: 0px;*/
-    /*left: 0px;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
     /*position: fixed;*/
     /*display: block;*/
     /*z-index: 998;*/
     /*text-align: center;*/
     /*opacity: 1;*/
+
     /*background: #fff url(../img/flowerLoading.gif) no-repeat center center fixed;*/
     /*background-size: 4.3em 3em;*/
+/*}*/
+/*#loading > img {*/
+    /*position: absolute;*/
+    /*width: 2em;*/
+    /*height: 2em;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*margin-left: -1em;*/
+    /*margin-top: -1em;*/
 /*}*/
 /*#loading.hidden {*/
     /*opacity: 0;*/
     /*z-index: -999;*/
-    /*-webkit-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
-    /*-moz-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
-    /*-ms-transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
-    /*transition: 0s z-index 2s, .5s opacity 1.5s, 1s Shrink 1s;*/
+    /*-webkit-transition: 0.2s opacity 0s, 0s z-index 0.2s; -moz-transition: 0.2s opacity 0s, 0s z-index 0.2s; -ms-transition: 0.2s opacity 0s, 0s z-index 0.2s; -o-transition: 0.2s opacity 0s, 0s z-index 0.2s; transition: 0.2s opacity 0s, 0s z-index 0.2s;*/
 /*}*/
-/*.Shrink { -webkit-animation-name: Shrink; -moz-animation-name: Shrink; -ms-animation-name: Shrink; -o-animation-name: Shrink; animation-name: Shrink; }*/
-/*@-webkit-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
-/*@-moz-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
-/*@-ms-keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
-/*@keyframes Shrink { 0% { background-size: 4.3em 3em; opacity: 1; } 100% { background-size: 0 0; opacity:0; } }*/
 
 /*#loading.show {*/
     /*opacity: 1;*/
     /*z-index: 998;*/
-    /*-webkit-transition: .5s opacity 0s, 0s z-index 0s; -moz-transition: .5s opacity 0s, 0s z-index 0s; -ms-transition: .5s opacity 0s, 0s z-index 0s; -o-transition: .5s opacity 0s, 0s z-index 0s; transition: .5s opacity 0s, 0s z-index 0s;*/
+    /*-webkit-transition: 0s z-index 0s, 0.2s opacity 0s; -moz-transition: 0s z-index 0s, 0.2s opacity 0s; -ms-transition: 0s z-index 0s, 0.2s opacity 0s; -o-transition: 0s z-index 0s, 0.2s opacity 0s; transition: 0s z-index 0s, 0.2s opacity 0s;*/
 /*}*/
 
 
+
 html {
+    overflow-y: scroll;
     height: 100%;
     font-size: 16px;
     font-family: Calibri, Helvetica, sans-serif;
@@ -48,9 +53,18 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1em;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /*overflow-x: hidden;*/
+    opacity: 1; /* fadeIn Fallback */
+    /*-webkit-animation: fadeIn 0.25s forward; *//* Chrome, Safari, Opera */
+    /*animation: fadeIn 0.5s;*/
 }
+    /*body.fadeInDelay {*/
+        /*opacity: 0;*/
+    /*}*/
+    /*@-webkit-keyframes fadeIn { 0%{opacity: 0;} 100%{opacity: 1;} }*/
+    /*@keyframes fadeIn { 0%{opacity: 0;} 100%{opacity: 1;} }*/
+
+
 
 img {
     width: 100%;
@@ -69,6 +83,7 @@ h1 {
 }
 h2 {
     font: 1.7em 'Cinzel', 'Times New Roman', serif;
+    font-variant: small-caps;
     margin-bottom: 20px;
     border-bottom: 1px solid #faa602;
 }
@@ -79,10 +94,11 @@ h2 {
     }
     h2:after{
         content: url(../img/flowerSmall.png);
-        margin-bottom: -30px;
+        margin: 0 auto -31px;
         display: block;
-        width: 100%;
+        width: 42px;
         padding: 10px 0;
+        background: #fff;
     }
 h3 {
     font: 1.5em 'Cinzel', 'Times New Roman', serif;
@@ -141,19 +157,16 @@ header {
     header, header #logo, header nav {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
-    header.scrolling{
+    header.notTop{
         position: fixed;
-        top: 0;
+        height: 4em;
     }
-    header.scrolling #logo {
+    header.notTop #logo {
         height: 2em;
-        padding: 0.5em;
     }
-    header.scrolling nav {
+    header.notTop nav {
         margin: 0.85em 0 0;
     }
     header.hidden {
@@ -175,29 +188,54 @@ header {
     #headerInner {
         position: relative;
         display: block;
-        margin: 0.2em auto 0;
+        margin: 0 auto;
+        height: 5em;
         max-width: 1400px;
         width: 90%;
         text-align: left;
     }
         #logo {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
             height: 3em;
             width: auto;
             padding: 1em;
         }
         nav {
             position: absolute;
+            display: block;
             top: 0;
             right: 0;
-            margin: 2em 0 0;
+            height: auto;
+            width: auto;
+            margin: 1.4em 0;
+            }
+            nav ul {
+                display: block;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
             }
             nav li {
                 list-style-type: none;
                 display: inline-block;
+                width: auto;
+                border: none;
+                text-align: center;
             }
-            nav a {
-                padding: 1em 1.3em;
+            nav ul li a {
+                width: auto;
+                display: inline-block;
+                padding: 0.4em 1.2em;
+                margin: 0 -6px 0 -1px; /* Invisible padding correction */
+                border-right: 1px solid #77110f;
             }
+                nav ul li:last-child a {
+                    border-right: none;
+                }
                 nav a:hover {
                     background: #77110f;
                     color: #fff;
@@ -205,6 +243,101 @@ header {
                 nav a:active {
                     background: #3c0908;
                 }
+
+            /* Mobile Menu Styles */
+
+            #menuToggle {
+                display: none;
+            }
+                #fullClose {
+                    display: none;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    background: rgba(0,0,0,0);
+                    z-index: 9;
+                }
+                    #fullClose.active {
+                        display: block;
+                        background: rgba(0,0,0,0.5);
+                    }
+            @media (max-width: 900px) {
+                #menuToggle {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 5em;
+                    height: 5em;
+                    z-index: 11;
+                    cursor: pointer;
+                    background: url(../img/hamburger.png) center no-repeat;
+                    -webkit-background-size: auto auto;
+                    -moz-background-size: auto auto;
+                    background-size: auto auto;
+                }
+                    #menuToggle.active {
+                        background: url(../img/closeX.png) center no-repeat;
+                    }
+                    header.notTop #menuToggle {
+                        height: 4em;
+                        width: 4em;
+                    }
+                nav {
+                    position: fixed;
+                    top: 3.8em;
+                    width: 100%;
+                    left: -120%;
+                    background: #fff;
+                    overflow: hidden;
+                    border-top: 3px solid #77110f;
+                    border-bottom: 3px solid #77110f;
+                }
+                nav ul {
+                    width: 100%;
+                    height: auto;
+                    padding: 1em;
+                }
+                nav ul li {
+                    width: 100%;
+                }
+                nav ul li a {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    font-size: 1.2em;
+                    padding: 1em 0;
+
+                }
+
+                /* Mobile Menu Toggle On */
+
+                nav.active {
+                    height: auto;
+                    left: 0;
+                }
+                nav.active li {
+                    border-bottom: #77110f;
+                }
+                    nav.active li:last-child {
+                        border-bottom: none;
+                    }
+            }
+            @media (max-width: 767px) {
+                #menuToggle {
+                    height: 4em;
+                    width: 4em;
+                    -webkit-background-size: 50%  40% !important;
+                    -moz-background-size: 50%  40% !important;
+                    background-size: 50%  40% !important;
+                }
+                nav {
+                    position: fixed;
+                    top: 2.8em;
+                }
+            }
+
 
 img#heroImage {
     width: 100%;
@@ -214,9 +347,10 @@ img#heroImage {
 }
 
 main {
+    margin-top: -1px; /* Some devices/browsers leave a 1px gap here */
     position: relative;
     background: #eee;
-    padding: 2em 0;
+    padding: 2em 0 4em; /* Padding-Bottom for Dome Background */
     background: url(../img/bgWoodBrown.jpg) repeat-y 50% 0;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
@@ -224,12 +358,21 @@ main {
     -o-background-size: 100% auto;
     background-size: 100% auto;
 }
+    main:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        bottom: 0; right: 0; left: 0;
+        width: 100%;
+        height: 55px;
+        background: url(../img/domeDotSmall.png) center bottom repeat-x;
+    }
 
 .linkAnchor {
     height: 0;
     width: 0;
     position: absolute;
-    margin-top: -10em;
+    margin-top: -10%;
 }
 
 section {
@@ -306,7 +449,7 @@ section {
         }
 
     @media (max-width:767px) {
-        .column3, .colunm4, .column6, .column12 {
+        .column3, .column4, .column6, .column12 {
             display: block;
             width: 96%;
             max-width: 550px;
@@ -402,15 +545,15 @@ section {
     box-sizing: border-box;
 }
     .textBox:after {
-        content: " ";
-        position: absolute;
-        border: 1px solid #ff7900;
-        top: 0.7em;
-        right: 0.7em;
-        bottom: 0.7em;
-        left: 0.7em;
-        z-index: -1;
-    }
+             content: " ";
+             position: absolute;
+             border: 1px solid #ff7900;
+             top: 0.7em;
+             right: 0.7em;
+             bottom: 0.7em;
+             left: 0.7em;
+             z-index: -1;
+         }
 
 #recipeCards {
     display: block;
@@ -475,7 +618,7 @@ section {
     border: 1px solid #77110f;
     /*padding: 3em;*/
     width: 94%;
-    left: 4%;
+    left: 1%;
 }
     #ingredients {
         display: inline-block;
@@ -607,24 +750,47 @@ section {
 
 footer {
     position: relative;
-    min-height: 20em;
+    /*min-height: 20em;*/
     width: 100%;
-    padding: 4em 3em 3em;
-    background: rgba(0,0,0,0.3);
-    background: url(../img/bgBlueSpices.jpg) no-repeat fixed 60% 50%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding: 3em;
+    background: #333;
+    border-top: 10px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+    #footerInner > * {
+        color: #fff !important;
+    }
+        #footerInner h2 {
+            font-size: 1.6em;
+            margin-bottom: 0.5em;
+        }
+        #footerInner h2:after {
+            background: #333;
+        }
+    #footerInner {
+        display: block;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+        #footerInner .column4 {
+            vertical-align: top;
+        }
+    footer button {
+        color: #fff;
+        background: #114b64;
+    }
+    footer button:hover {
+        background: #0c3647;
+    }
+    footer button:active {
+        background: #114b64;
+}
+
     #share {
-        margin-left: auto;
+        margin: 1.5em auto 1em;
         width: 100%;
-        text-align: right;
     }
     #share > a {
         height: 40px;
@@ -632,15 +798,15 @@ footer {
         display: inline-block;
         overflow: hidden;
         background-image: url("../img/spritesSocialMedia.png");
-        opacity: 0.4;
-    }
-    #share a:hover {
         opacity: 1;
     }
-        #facebook { }
-        #twitter { background-position: -40px 0;}
+    #share a:hover {
+        opacity: 0.5;
+    }
+          #facebook { background-position: 0 0; }
+           #twitter { background-position: -40px 0;}
         #googlePlus { background-position: -80px 0; }
-        #linkedIn { background-position: -120px 0; }
+          #linkedIn { background-position: -120px 0; }
 
 
 
@@ -673,6 +839,9 @@ footer {
 
 
 @media (max-width: 1300px) {
+    #heroImage {
+        margin-top: 2em;
+    }
     section {
         width: 90%;
     }
@@ -690,23 +859,49 @@ footer {
     section {
         width: 100%;
     }
+    #heroImage {
+        margin-top: 3em;
+    }
     .textBox.recipeMain {
         margin-top: 0;
+    }
+    footer .column4 {
+        display: block;
+        margin: 3em auto;
+        width: 100% !important;
+        border: none !important;
     }
 }
 
 @media (max-width: 900px) {
-    #logo, nav {
+    #logo {
         display: block;
         position: relative;
-        margin: 1em auto;
+        margin: 0 auto;
         float: none;
         text-align: center;
     }
 }
 
 
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 767px),*/
+       /*only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 767px),*/
+       /*only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 767px),*/
+       /*only screen and (        min-device-pixel-ratio: 2)      and (max-width: 767px),*/
+       /*only screen and (                min-resolution: 192dpi) and (max-width: 767px),*/
+       /*only screen and (                min-resolution: 2dppx)  and (max-width: 767px) {*/
 @media (max-width: 767px) {
+    header {
+        height: 4em;
+    }
+    #logo {
+        display: block;
+        margin: 0 auto 0 0;
+        height: 2em;
+    }
+    #heroImage {
+        margin-top: 4em;
+    }
     #photoCooking, #photoDabba, .recipeHero {
         width: 100%;
         height: auto;
@@ -744,7 +939,7 @@ footer {
 
     #ingredients {
         display: block;
-        width: 90%;
+        width: 89%;
         float: none;
         margin: -2em auto 0;
     }
@@ -759,11 +954,21 @@ footer {
         float: none;
         clear: both;
     }
+
+
+    #footerInner > * {
+        padding: 1em 0;
+        border: none;
+    }
 }
 
 
 
 @media (max-width: 500px) {
+    #logo {
+        height: 1.4em !important;
+        padding: 1.3em 1em;
+    }
     #recipeCards li > * {
         display: block;
         width: 68%;
@@ -772,6 +977,9 @@ footer {
     #recipeCards .cardInfo {
         width: 68%;
         margin: -1.5em auto 1em;
+    }
+    footer {
+        padding: 2em 1em;
     }
 }
 
@@ -811,23 +1019,23 @@ footer {
    ========================================================================== */
 
 
-/*@media only screen and (min-width: 320px) {*/
+@media only screen and (min-width: 320px) {
 
-    /* Small screen, non-retina */
+     /*Small screen, non-retina */
 
-/*}*/
+}
 
-/*@media*/
-/*only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),*/
-/*only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),*/
-/*only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),*/
-/*only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),*/
-/*only screen and (                min-resolution: 192dpi) and (min-width: 320px),*/
-/*only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
 
-    /* Small screen, retina, stuff to override above media query */
+     /*Small screen, retina, stuff to override above media query */
 
-/*}*/
+}
 
 /*@media only screen and (min-width: 700px) {*/
 

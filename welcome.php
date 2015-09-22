@@ -11,21 +11,22 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!-- <?php include 'loading.php';?> -->
+
         <?php include 'header.php';?>
+
         <img id="heroImage" src="img/bgTopSpices.jpg" alt="Indian Spices used in cooking traditional cuisine."/>
 
         <main>
 
             <section>
+                <div class="linkAnchor" id="ClassesAndEvents"></div>
                 <div class="column6 floatLeft photoBorder">
                     <img id="photoCooking" src="img/cooking.jpg" alt="Learn to cook Indian food!" />
                 </div>
                 <div class="column6 floatRight textBox" style="margin-top: -4em;">
-                    <div class="linkAnchor" id="ClassesAndEvents"></div>
                     <h2>Let's Cook Together</h2>
                     <p>
-                        I teach classes at various locations around the San Francisco Bay Area.
+                        My name is Meela Shah I teach Indian cooking classes in the San Francisco Bay Area.
                         Come learn how to use exotic spices and their incredible health benefits.
                         I also hold demonstrations and events at local businesses
                         where you can come enjoy samples of my cooking.
@@ -43,21 +44,20 @@
             </section>
 
             <section>
+                <div class="linkAnchor" id="MasalaDabba"></div>
                 <div class="column6 floatRight photoBorder">
                     <img id="photoDabba" src="img/dabbaNew.jpg" alt="Masal Dabba (Spice Box) with Curry Powder, Turmeric, Chili Powder, Fennel, Fenugreek Herb, Garam Masala Powder, and Mustard Seeds." />
                 </div>
-
                 <div class="column6 floatLeft textBox" style="margin-top: -2em;">
-                    <div class="linkAnchor" id="MasalaDabba"></div>
                     <h2>Masala Dabba<span>(Spice Box)</span></h2>
                     <p>
                         The heart of the Indian kitchen is the Masala Dabba.
                         It contains the spices you'll need to start cooking Indian food at home.
                         A complete Dabba costs $30 (spices included),
-                        and you can also purchase additional spices individually.
+                        and I can also provide you with extra spices refills.
                     </p>
                     <a href="#" target="blank">
-                        <button>Order a Box</button>
+                        <button>Order a Dabba</button>
                     </a>
                 </div>
                 <div class="column6 floatLeft">
@@ -66,8 +66,8 @@
             </section>
 
             <section>
+                <div class="linkAnchor" id="Recipes"></div>
                 <div class="column6 textBox">
-                    <div class="linkAnchor" id="Recipes"></div>
                     <h2>My Favorite Recipes</h2>
                     <p>
                         I provide recipes at all of my classes and events,
@@ -81,7 +81,7 @@
                         <div class="cardInfo">
                             <h4>Spinach Pakoras</h4>
                             <p>makes 16-20</p>
-                            <a href="spinach-pakoras.php"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('spinach-pakoras.php')"><button class="small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
@@ -89,7 +89,7 @@
                         <div class="cardInfo">
                             <h4>Mattar Paneer Masala</h4>
                             <p>serves 3-4</p>
-                            <a href="mattar-paneer-masala.php"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('mattar-paneer-masala.php')"><button class="small">View Recipe</button></a>
                         </div>
                     </li>
                     <li class="column4">
@@ -97,7 +97,7 @@
                         <div class="cardInfo">
                             <h4>Kulfi Ice Cream</h4>
                             <p>serves 3-4</p>
-                            <a href="kulfi-ice-cream.php"><button class="small">View Recipe</button></a>
+                            <a href="javascript:delay('kulfi-ice-cream.php')"><button class="small">View Recipe</button></a>
                         </div>
                     </li>
                 </ul>
